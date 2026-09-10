@@ -14,3 +14,4 @@ tags: [decisions, index, stratum-3]
 | [[ADR-0002-roguelike-flavor]] | Roguelike means run-based with meta unlocks | accepted | B1 |
 | [[ADR-0003-scope-of-first-pass]] | First pass is concepts, research, stack recommendation | accepted | — |
 | [[ADR-0004-stack-selection-rubric]] | Stack is chosen by criteria, not preference | accepted | rubric for B3 |
+| [[ADR-0005-stack]] | Stack: TypeScript sim core, Phaser 4 renderer, Capacitor iOS shell | accepted (delegated pick; ratify) | B3 |

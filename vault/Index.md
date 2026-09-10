@@ -32,5 +32,6 @@ This vault is **stratified**: each folder is a layer of narrowing. Nothing is de
 - [[Brief]] · [[Constraints]] · [[Open Questions]]
 - [[Research - TD Mechanics Taxonomy]] · [[Research - Balancing Tooling]] · [[Research - Engines and Art Pipeline]]
 - [[Concept A]] · [[Concept B]] · [[Concept C]]
+- [[Concept Evaluation]] · [[Balance Toolkit Plan]]
 - [[Branch Register]] · [[Decision Log]]
 - [[Session Log]]

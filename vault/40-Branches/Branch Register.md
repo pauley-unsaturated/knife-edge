@@ -13,7 +13,7 @@ tags: [branches, register, stratum-4]
 | B0 | Project home | dedicated repo / PunkRecords docs folder / artifact only | chosen: [[ADR-0001-project-home]] | free |
 | B1 | Roguelike flavor | run-based + meta / pure permadeath / procedural map only | chosen: [[ADR-0002-roguelike-flavor]] | moderate |
 | B2 | Theme | fantasy / cyberpunk-Japan futurism / 80s Bad Dudes action / other | open | low until art starts, high after |
-| B3 | Engine and stack | see [[Research - Engines and Art Pipeline]] | open; rubric in [[ADR-0004-stack-selection-rubric]] | high once sim exists |
+| B3 | Engine and stack | TS sim + Phaser 4 + Capacitor / Go + Ebitengine / Godot 4 GDScript | chosen: [[ADR-0005-stack]] (delegated pick; ratify) | high once sim exists; bounded by engine-free sim |
 | B4 | Core spatial mechanic | mazing on open grid / fixed path with build slots / Rampart-style wall building / lane defense | open; see [[Concept A]] [[Concept B]] [[Concept C]] | high |
 | B5 | Time model | real-time with speed control / phase-based build then battle / turn-based ticks | open | high |
 | B6 | Mob generator | scripted waves / procedural wave budget / player-sent enemies / spawner buildings | open | moderate |
@@ -23,11 +23,11 @@ tags: [branches, register, stratum-4]
 | B10 | Input model | touch-first / cursor-first (NES feel) / both | open | moderate |
 | B11 | Session length | 10-min mobile runs / 30-45-min desktop runs | open | moderate |
 | B12 | Art pipeline | Pixellab API automated / Pixellab manual + Aseprite / hand-drawn | open; deferred by C5 | low |
-| B13 | Balance tooling depth | spreadsheet only / headless Monte Carlo / solver-based difficulty ceiling | open; see [[Research - Balancing Tooling]] | moderate |
+| B13 | Balance tooling depth | spreadsheet only / headless Monte Carlo / solver-based difficulty ceiling | narrowed to solver-based ceiling; plan in [[Balance Toolkit Plan]]; ADR pending | moderate |
 
 ## Parked directions
 
-*(none yet)*
+- Concept C's spawner-and-heat generator: parked as a possible mode, not the base chassis. See [[Concept Evaluation]].
 
 ## How to rewind a chosen branch
 

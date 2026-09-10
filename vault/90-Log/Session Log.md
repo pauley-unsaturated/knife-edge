@@ -15,3 +15,7 @@ tags: [log, stratum-log]
 - User added the vault requirement mid-session; this vault structure is the response.
 - GitHub connector could not create the repo (403); user created `pauley-unsaturated/knife-edge` by hand.
 - Launched three research threads: TD mechanics taxonomy, balancing tooling prior art, engines + Pixellab API.
+- Research landed as three stratum-1 notes. Wrote Concepts A (Bulwark), B (ICE), C (Block Party).
+- Recorded ADR-0005 (stack: TS sim + Phaser 4 + Capacitor) as a delegated pick pending ratification.
+- Wrote [[Balance Toolkit Plan]] and [[Concept Evaluation]] (recommendation: B's economy, A's phase model, theme deferred).
+- **Hand-off:** user ratifies ADR-0005, answers Q2-Q5 in [[Open Questions]], picks a direction from [[Concept Evaluation]]; next pass is M0 of the toolkit plan.
