@@ -32,3 +32,4 @@ tags: [log, stratum-log]
 - User: per-type curves decide the upgrade/build-out crossover; some types scale late, some synergize on build-out. Recorded as ADR-0013 amendment 4 and as data fields (`costGrowthBp`, `damageGrowthBp`, `adjacencyBonusBp`).
 - ADR-0014: started M0. Built `packages/sim`, `tools/balance`, `data/game.json`, tests (13 passing, golden hash pinned), CI, and experiment 0001 (HP-growth cliff found; budget growth lengthens rather than hardens; interest currently irrelevant).
 - **Hand-off:** M1 next: cap enemies per wave, budget buys tiers, interest x bounty sweep with the per-wave Margin invariant, then more tower types and the damage-tag matrix.
+- Added `CLAUDE.md` (durable agent instructions) and `HANDOFF.md` (state + M1 task list) at the repo root for a local coding agent.
