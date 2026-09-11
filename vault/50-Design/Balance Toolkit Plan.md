@@ -22,12 +22,22 @@ Margin(n)         = Budget(n) / MinDefenseCost(n) - 1
 
 Targets are a **band** per wave, e.g. margin 10-15% on waves 1-5, narrowing to 3-6% by wave 20, and negative-but-recoverable on boss waves (you take leaks but the run survives). The band *is* the difficulty setting; mutators and difficulty tiers move the band, never the enemy stats directly.
 
+## Fast-forward and the human-validated pipeline (added 2026-09-11)
+
+Per [[ADR-0007-real-time-with-speed-control]] and constraint C9 in [[Constraints]]:
+
+- **One step function, three clocks.** The sim exposes `step(state, commands)` for one fixed tick. Node runs it in a tight loop at unbounded speed for the agent swarm. The browser runs it at 1x/2x/4x for play and at an "instant" setting (step until wave end, then render) for human validation. Nothing in the sim reads wall-clock time.
+- **Bot claims are replays.** Every bot run writes `(data version, seed, command list)`. A human loads that file in the browser and watches it at 1x, or scrubs it. If the replay does not match the bot's reported outcome, the pipeline is broken, not the design. This is the acceptance test for the toolkit itself.
+- **Human calibration of the ruler.** Before the bot ladder is trusted, the human plays a fixed set of seeds and the toolkit records their command lists. The `greedy` policy is tuned until its wave-reached distribution brackets the human's, so "par" is anchored to a real player, not to a heuristic.
+- **Scientific hygiene.** Every sweep is a versioned experiment: data version, sim commit, seed batch, policy set, and hypothesis recorded in `experiments/` with the results JSONL. Reports show confidence intervals, never bare means. A change to the design must state which invariant it expects to move and by how much before the sweep runs.
+- **Swarm-friendly.** Sweeps shard by seed range; each shard is a stateless CLI invocation, so many agents can run partitions in parallel and a reducer merges JSONL. Results are reproducible from the manifest alone.
+
 ## Bot ladder (difficulty ruler)
 
 | Policy | Purpose |
 |---|---|
 | `random` | Floor. Must lose early (<5% clear at wave 8). |
-| `greedy` | DPS-per-gold with range weighting; buys at wave start. The par player. |
+| `greedy` | DPS-per-gold with range weighting; acts at wave start and at fixed mid-wave checkpoints (real-time model). The par player, calibrated against human runs. |
 | `greedy-k` | Greedy with k forced suboptimal purchases. Calibrates forgiveness: "wave 12 clears with k<=3 at >=95% of seeds." |
 | `beam` | Beam search over build orders (btd6-farm-optimizer pattern). Estimates the ceiling. |
 | `interest-greedy` | Delays purchases to compound; the knife-edge exploit finder. Must not dominate `greedy` by more than the designed edge. |

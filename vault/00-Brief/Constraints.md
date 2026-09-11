@@ -22,3 +22,9 @@ tags: [constraints, stratum-0]
 ## Derived architectural rule
 
 **The simulation is a library; the game is a client of it.** Renderer, input, audio, and platform shells depend on the sim; the sim depends on nothing. The balance CLI is a second client of the same sim. This is the same "lift logic out of views" discipline PunkRecords uses, applied to a game.
+
+## Amendments (via ADR, newest last)
+
+- 2026-09-11 [[ADR-0009-retro-is-a-vibe]] amends **C2**: retro is the look and feel, not enforced hardware limits.
+- 2026-09-11 [[ADR-0006-web-primary-cursor-first]] sharpens **C1**: web is required and is the primary iteration target; iOS follows.
+- 2026-09-11 [[ADR-0007-real-time-with-speed-control]] sharpens **C4**: the sim must fast-forward headlessly at unbounded speed for the agent swarm, and in-browser for humans, on one code path. Add **C9 (R):** the human validates the balance pipeline, not only its outputs: every bot claim must be reproducible as a watchable replay.

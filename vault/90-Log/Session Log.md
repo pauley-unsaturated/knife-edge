@@ -19,3 +19,11 @@ tags: [log, stratum-log]
 - Recorded ADR-0005 (stack: TS sim + Phaser 4 + Capacitor) as a delegated pick pending ratification.
 - Wrote [[Balance Toolkit Plan]] and [[Concept Evaluation]] (recommendation: B's economy, A's phase model, theme deferred).
 - **Hand-off:** user ratifies ADR-0005, answers Q2-Q5 in [[Open Questions]], picks a direction from [[Concept Evaluation]]; next pass is M0 of the toolkit plan.
+
+## 2026-09-11 — Session 1 continued: open questions answered
+
+- User answered Q1-Q7. Recorded as ADR-0006 (web primary, cursor-first), ADR-0007 (real-time with speed control; headless fast-forward), ADR-0008 (25-30 min runs), ADR-0009 (retro is a vibe), ADR-0010 (premium), ADR-0011 (audio).
+- ADR-0005 (stack) ratified via ADR-0006. Constraints amended (C2 relaxed, C1/C4 sharpened, C9 added: human-validated pipeline).
+- Balance Toolkit Plan gained the fast-forward / replay / human-calibration / experiment-manifest section.
+- **Still open:** B2 theme, B4 spatial mechanic, B6 mob generator, B7 economy signature, B8 weapon system, B12 art pipeline, B13 tooling depth ADR.
+- **Hand-off:** next is an ADR closing B4/B7 (recommendation in [[Concept Evaluation]]), then M0 of the toolkit plan.
