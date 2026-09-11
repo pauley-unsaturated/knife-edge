@@ -1,0 +1,36 @@
+{
+  "version": "m0-2026-09-11",
+  "grid": { "width": 20, "height": 14, "obstacles": 12 },
+  "economy": {
+    "startGold": 120,
+    "lives": 20,
+    "tickRate": 20,
+    "waveIntervalSec": 30,
+    "earlyCallBonusPerSec": 1,
+    "interestBp": 300,
+    "bountyBase": 2,
+    "bountyPerWave": 1,
+    "sellRefundBp": 7500,
+    "maxWaves": 40
+  },
+  "towers": [
+    {
+      "id": "bolt",
+      "damageType": "kinetic",
+      "cost": 30,
+      "levels": 6,
+      "costGrowthBp": 15000,
+      "damage": 6,
+      "damageGrowthBp": 16000,
+      "rangeCells": 2.5,
+      "rangeGrowthBp": 10500,
+      "cooldownTicks": 10,
+      "adjacencyBonusBp": 0
+    }
+  ],
+  "enemies": [
+    { "id": "grunt", "hp": 24, "speedUpt": 96, "budgetCost": 10, "unlockWave": 1, "tags": [] },
+    { "id": "swift", "hp": 14, "speedUpt": 192, "budgetCost": 12, "unlockWave": 4, "tags": ["swift"] }
+  ],
+  "composer": { "budgetBase": 40, "growthBp": 10900, "riddleEvery": 5, "spawnIntervalTicks": 12, "hpGrowthBp": 10600 }
+}

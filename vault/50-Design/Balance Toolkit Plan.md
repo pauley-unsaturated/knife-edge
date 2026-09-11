@@ -45,6 +45,8 @@ Per [[ADR-0013-wave-composer-and-towers]], these are the M1 sweep targets. Each 
 | `m` | damage-type matrix strength (match multiplier, mismatch divisor) | 1.0 - 2.5 |
 | `r` | range-vs-damage exchange rate on the cost curve | to be derived from Doucet's range-dominance observation |
 | `relic_response` | how much the composer counters relic power | 0 - 1 |
+| per type: `costGrowthBp`, `damageGrowthBp`, `rangeGrowthBp` | the ladder curves; their shapes set each type's upgrade-vs-build-out crossover | 1.3x - 1.8x per level |
+| per type: `adjacencyBonusBp` | build-out synergy: damage bonus per adjacent same-type tower | 0 - 25% |
 
 **God-run metric.** For each run, relic power `P = product of stacked relic multipliers, normalised`. A run is a god run when `Margin(n)` exceeds a threshold (start at +40%) for at least 25% of remaining waves. Report the god-run rate per seed batch and per policy. Target band at par play: 5-10%. Below the band, relics are too weak to be exciting; above it, the knife edge is fiction. The zero-relic baseline must still satisfy the per-wave invariant on its own.
 
@@ -81,7 +83,7 @@ Per [[ADR-0013-wave-composer-and-towers]], these are the M1 sweep targets. Each 
 
 ## Milestones
 
-- **M0 (next pass):** sim skeleton, PRNG, fixed-point, one tower, one enemy, one map generator, `random` and `greedy` bots, determinism + golden tests. No renderer.
+- **M0 (done 2026-09-11, [[ADR-0014-begin-m0]]):** sim skeleton, PRNG, fixed-point, one tower, two enemies, map generator, `random` and `greedy` bots, determinism + golden tests, CLI with `--set` overrides and replay files, CI. First experiment recorded in `experiments/0001-m0-cliff`. No renderer.
 - **M1:** full tower/enemy tables for the chosen concept, `greedy-k`, `interest-greedy`, per-wave invariant report, first sweep.
 - **M2:** `beam` ceiling estimate, fuzzer, pinned exploits, nightly CI.
 - **M3:** placeholder renderer wired to the same sim; humans play what the bots play; telemetry from playtests compared to bot ladder (Slay the Spire style pick-rate and damage-taken logs).
@@ -91,3 +93,9 @@ Per [[ADR-0013-wave-composer-and-towers]], these are the M1 sweep targets. Each 
 - Concept A: the solver must model wall-piece draws and enclosure; income is area, so `Budget(n)` depends on the bot's building skill. Use `greedy-enclosure` as the par policy.
 - Concept B: cleanest fit. Interest math is closed-form; mazing bots are well-studied (Desktop TD lineage).
 - Concept C: no discrete waves. Simulate whole blocks; the policy is a raid schedule; invariants are expressed over time windows instead of wave indices.
+
+## Lessons from experiment 0001 (2026-09-11)
+
+- Run length must be an invariant, not just a report: budget growth lengthened waves to hours before it made them hard. M1 caps enemies per wave and lets the budget buy HP tiers and tags.
+- HP growth is a 600-bp-wide cliff between "random bot wins" and "random bot loses". Sweeps must be fine-grained around it.
+- With the placeholder economy, early-call gold dwarfs interest, so the knife edge from ADR-0012 does not exist yet. The first M1 sweep is interest rate x bounty base x start gold, with the invariant `Margin(n)` computed per wave.
