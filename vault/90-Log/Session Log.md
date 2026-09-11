@@ -28,3 +28,4 @@ tags: [log, stratum-log]
 - **Still open:** B2 theme, B4 spatial mechanic, B6 mob generator, B7 economy signature, B8 weapon system, B12 art pipeline, B13 tooling depth ADR.
 - **Hand-off:** next is an ADR closing B4/B7 (recommendation in [[Concept Evaluation]]), then M0 of the toolkit plan.
 - User accepted the B4/B7 recommendation (ADR-0012), deferred theme (B2), asked for a B6/B8 recommendation: drafted as ADR-0013 (proposed).
+- User accepted ADR-0013: B6 as proposed; B8 amended (hyperparameters to sweep, stacking relics, god runs). Toolkit plan gained the hyperparameter table and god-run metric.

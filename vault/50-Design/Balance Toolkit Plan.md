@@ -32,6 +32,22 @@ Per [[ADR-0007-real-time-with-speed-control]] and constraint C9 in [[Constraints
 - **Scientific hygiene.** Every sweep is a versioned experiment: data version, sim commit, seed batch, policy set, and hypothesis recorded in `experiments/` with the results JSONL. Reports show confidence intervals, never bare means. A change to the design must state which invariant it expects to move and by how much before the sweep runs.
 - **Swarm-friendly.** Sweeps shard by seed range; each shard is a stateless CLI invocation, so many agents can run partitions in parallel and a reducer merges JSONL. Results are reproducible from the manifest alone.
 
+## Weapon-system hyperparameters and the god-run metric (added 2026-09-11)
+
+Per [[ADR-0013-wave-composer-and-towers]], these are the M1 sweep targets. Each is a field in `data/economy.json` or `data/towers.csv`, never a literal in code.
+
+| Symbol | Meaning | First sweep range |
+|---|---|---|
+| `g` | wave budget growth per wave | 1.06 - 1.14 |
+| `i0`, `i_step` | starting interest rate and per-offer increment | 0 - 5%, 1 - 3% |
+| `L` | ladder length (levels per tower) | 4 - 10 |
+| `u` | upgrade-vs-spread efficiency premium | -10% to +25% |
+| `m` | damage-type matrix strength (match multiplier, mismatch divisor) | 1.0 - 2.5 |
+| `r` | range-vs-damage exchange rate on the cost curve | to be derived from Doucet's range-dominance observation |
+| `relic_response` | how much the composer counters relic power | 0 - 1 |
+
+**God-run metric.** For each run, relic power `P = product of stacked relic multipliers, normalised`. A run is a god run when `Margin(n)` exceeds a threshold (start at +40%) for at least 25% of remaining waves. Report the god-run rate per seed batch and per policy. Target band at par play: 5-10%. Below the band, relics are too weak to be exciting; above it, the knife edge is fiction. The zero-relic baseline must still satisfy the per-wave invariant on its own.
+
 ## Bot ladder (difficulty ruler)
 
 | Policy | Purpose |

@@ -6,7 +6,7 @@ tags: [adr, decision, stratum-3, mobs, weapons]
 ---
 # ADR-0013 Budgeted wave composer and flat-ladder towers with a damage-tag matrix
 
-- **Status:** proposed (2026-09-11), awaiting the user's yes
+- **Status:** accepted (2026-09-11) with the user's amendments to B8, recorded below. The B6 section is accepted as proposed.
 - **Closes branches:** [[Branch Register]] B6 (mob generator) and B8 (weapon system)
 - **Decision (proposed):**
 
@@ -24,6 +24,10 @@ tags: [adr, decision, stratum-3, mobs, weapons]
   - **Patches** (relics) are the roguelike offer layer: one slot per tower plus run-wide patches; they modify behaviour, never raw stats (e.g., "bolts pierce", "slow stacks", "sell refund 90%"), so the base cost curve stays valid.
   - Why: linear ladders and a matrix are the two structures the balancing literature knows how to price; the offer layer supplies variety without breaking the invariant.
 
+- **User amendments to B8 (2026-09-11):**
+  1. **The weapon-system numbers are hyperparameters to explore, not decisions.** Seven damage types is fine. The following are explicit tunables the toolkit sweeps in M1, each with a named data field: ladder length `L` (levels per tower), upgrade-vs-spread efficiency `u` (gold-efficiency premium of upgrading over buying a second tower; may be negative), matrix strength `m` (how much a matching damage type multiplies against its tag, and how much a mismatch divides), range-vs-damage exchange rate `r` on the cost curve.
+  2. **Relics stack, and stacking is meant to produce "god runs."** Relics (patches) may modify stats, not only behaviour, and they compose multiplicatively with synergy tags (e.g., three "slow" relics make slow towers deal bonus damage to slowed enemies). A run that assembles a synergy should visibly break the knife edge and feel like a roguelike god run.
+  3. **How god runs coexist with knife-edge balance:** the per-wave invariant in [[Balance Toolkit Plan]] is asserted on the **zero-relic baseline** and on the *median* relic draw; relics are the designed escape valve above it. The toolkit tracks **relic power** as a scalar per run and reports the **god-run rate** (runs where the margin exceeds a threshold for a sustained span) as a first-class metric with a target band (e.g., 5-10% of par-play runs). The wave composer does not fully counter relic power; it may respond partially through a tunable `relic_response` in [0, 1], where 0 means god runs are never countered.
 - **Alternatives considered:** scripted hand-authored waves (rejected: not replayable across procedural boards, and every rebalance is manual); element/gem combination towers (deferred to expansion); branching upgrade trees per tower (rejected for launch: doubles the cost-curve surface).
 - **Consequences:** M1 of the [[Balance Toolkit Plan]] builds `data/enemies.csv` with budget prices, `data/composer.json` with the rules, and `data/towers.csv` with ladders; the first sweep is g x interest rate.
 - **Rewind:** Moderate. The composer and the tower tables are data; replacing either leaves the sim and toolkit intact.
