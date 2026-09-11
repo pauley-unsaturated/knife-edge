@@ -21,3 +21,5 @@ tags: [decisions, index, stratum-3]
 | [[ADR-0009-retro-is-a-vibe]] | Retro is a vibe, not a hardware constraint | accepted | amends C2, narrows B12 |
 | [[ADR-0010-premium]] | Premium, sold once | accepted | B14 |
 | [[ADR-0011-audio]] | Tracker music, synthesized SFX | accepted | B15 |
+| [[ADR-0012-mazing-and-economy]] | Open-grid mazing; bounty + interest + early-call economy | accepted | B4, B7 |
+| [[ADR-0013-wave-composer-and-towers]] | Budgeted wave composer; flat-ladder towers + damage-tag matrix + patches | proposed | B6, B8 |

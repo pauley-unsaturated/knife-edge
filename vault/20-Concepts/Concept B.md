@@ -6,7 +6,7 @@ tags: [concept, stratum-2, mazing, cyberpunk]
 ---
 # Concept B — ICE (working title)
 
-- **status:** alive
+- **status:** alive; base design per [[ADR-0012-mazing-and-economy]]
 - **theme lane:** cyberpunk / Japanese futurism, neon on black (the Vector TD look, made diegetic)
 - **one line:** You are the sysop of a mainframe under intrusion. Towers are ICE programs, the maze is the circuit board you route packets through, and the only real decision is whether to spend now or let your credits compound.
 

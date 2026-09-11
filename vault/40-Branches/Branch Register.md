@@ -12,13 +12,13 @@ tags: [branches, register, stratum-4]
 |---|---|---|---|---|
 | B0 | Project home | dedicated repo / PunkRecords docs folder / artifact only | chosen: [[ADR-0001-project-home]] | free |
 | B1 | Roguelike flavor | run-based + meta / pure permadeath / procedural map only | chosen: [[ADR-0002-roguelike-flavor]] | moderate |
-| B2 | Theme | fantasy / cyberpunk-Japan futurism / 80s Bad Dudes action / other | open | low until art starts, high after |
+| B2 | Theme | fantasy / cyberpunk-Japan futurism / 80s Bad Dudes action / other | **deferred** (user, 2026-09-11) until a placeholder renderer exists | low until art starts, high after |
 | B3 | Engine and stack | TS sim + Phaser 4 + Capacitor / Go + Ebitengine / Godot 4 GDScript | chosen: [[ADR-0005-stack]], ratified by [[ADR-0006-web-primary-cursor-first]] | high once sim exists; bounded by engine-free sim |
-| B4 | Core spatial mechanic | mazing on open grid / fixed path with build slots / Rampart-style wall building / lane defense | open; see [[Concept A]] [[Concept B]] [[Concept C]] | high |
+| B4 | Core spatial mechanic | mazing on open grid / fixed path with build slots / Rampart-style wall building / lane defense | chosen: [[ADR-0012-mazing-and-economy]] | high |
 | B5 | Time model | real-time with speed control / phase-based build then battle / turn-based ticks | chosen: [[ADR-0007-real-time-with-speed-control]] | high |
-| B6 | Mob generator | scripted waves / procedural wave budget / player-sent enemies / spawner buildings | open | moderate |
-| B7 | Economy signature | interest on banked gold / kill bounties / wave-clear bonus / early-send bonus | open | moderate (this is the knife edge itself) |
-| B8 | Weapon system | flat upgrades / element combination / gem socketing / synergy tags | open | moderate |
+| B6 | Mob generator | scripted waves / procedural wave budget / player-sent enemies / spawner buildings | proposed: [[ADR-0013-wave-composer-and-towers]] | moderate |
+| B7 | Economy signature | interest on banked gold / kill bounties / wave-clear bonus / early-send bonus | chosen: [[ADR-0012-mazing-and-economy]] | moderate (this is the knife edge itself) |
+| B8 | Weapon system | flat upgrades / element combination / gem socketing / synergy tags | proposed: [[ADR-0013-wave-composer-and-towers]] | moderate |
 | B9 | Meta progression | unlock pool widening / stat inflation (forbidden by ADR-0002) / cosmetic only | narrowed by ADR-0002 | low |
 | B10 | Input model | touch-first / cursor-first (NES feel) / both | chosen: [[ADR-0006-web-primary-cursor-first]] | moderate |
 | B11 | Session length | 10-min mobile runs / 25-30-min runs / 30-45-min desktop runs | chosen: [[ADR-0008-run-length]] | moderate |
@@ -30,6 +30,8 @@ tags: [branches, register, stratum-4]
 ## Parked directions
 
 - Concept C's spawner-and-heat generator: parked as a possible mode, not the base chassis. See [[Concept Evaluation]].
+- Concept A's wall-piece territory income: parked; designated rewind target for B4 per [[ADR-0012-mazing-and-economy]].
+- Element/gem combination towers: parked for a post-launch expansion per [[ADR-0013-wave-composer-and-towers]].
 
 ## How to rewind a chosen branch
 

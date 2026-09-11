@@ -6,7 +6,7 @@ tags: [concept, stratum-2, spawners, 80s-action]
 ---
 # Concept C — Block Party (working title)
 
-- **status:** alive
+- **status:** parked (heat mechanic kept as a possible mode)
 - **theme lane:** 80s action, *Bad Dudes* / *River City Ransom* / *Double Dragon* street brawler
 - **one line:** Gangs pour out of hideouts across a scrolling city block. You post your crew on the street corners, and every hideout you raid for cash makes the rest of them angrier.
 

@@ -6,7 +6,7 @@ tags: [concept, stratum-2, rampart, fantasy]
 ---
 # Concept A — Bulwark (working title)
 
-- **status:** alive
+- **status:** parked (rewind target for B4; see [[ADR-0012-mazing-and-economy]])
 - **theme lane:** fantasy (castle siege), NES-authentic
 - **one line:** Rampart's build/battle/repair loop rebuilt as a roguelike island chain, where enclosed territory is your income and every hole in the wall is money bleeding out.
 
