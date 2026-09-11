@@ -4,10 +4,15 @@
   "packageManager": "pnpm@10.33.0",
   "scripts": {
     "test": "vitest run",
-    "typecheck": "tsc -b",
-    "balance": "tsx tools/balance/src/cli.ts"
+    "typecheck": "tsc -b --force",
+    "balance": "tsx tools/balance/src/cli.ts",
+    "dev": "pnpm --filter @knife-edge/web dev",
+    "build": "pnpm --filter @knife-edge/web build",
+    "validate:balance": "tsx tools/balance/src/validate-lab.ts",
+    "test:browser": "playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@types/node": "^22.15.0",
     "tsx": "^4.23.13",
     "typescript": "^5.9.0",

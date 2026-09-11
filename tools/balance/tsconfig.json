@@ -1,1 +1,1 @@
-{ "extends": "../../tsconfig.base.json", "compilerOptions": { "rootDir": "src", "outDir": "dist", "types": ["node"] }, "include": ["src"], "references": [{ "path": "../../packages/sim" }] }
+{ "extends": "../../tsconfig.base.json", "compilerOptions": { "rootDir": "src", "outDir": "dist", "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo", "types": ["node"] }, "include": ["src"], "references": [{ "path": "../../packages/sim" }] }

@@ -1,0 +1,458 @@
+[
+  {
+    "case": "startGold9500",
+    "data": "demo-1+startGold9500",
+    "policy": "greedy",
+    "runs": 30,
+    "winRate": 0.7333333333333333,
+    "wavesP5": 19,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.6,
+    "minutesP5": 17.6,
+    "minutesP95": 28.2,
+    "winRateCI95": [
+      0.5555169795568831,
+      0.8581750444608938
+    ],
+    "meanInterestShare": 0.013148104418359263,
+    "replayVerified": 30
+  },
+  {
+    "case": "startGold9500",
+    "data": "demo-1+startGold9500",
+    "policy": "random",
+    "runs": 30,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 28,
+    "minutesP50": 1.1,
+    "minutesP5": 1,
+    "minutesP95": 29.4,
+    "winRateCI95": [
+      0,
+      0.113517091390478
+    ],
+    "meanInterestShare": 0.17579835653722356,
+    "replayVerified": 30
+  },
+  {
+    "case": "startGold9500",
+    "data": "demo-1+startGold9500",
+    "policy": "greedy-reserve60",
+    "runs": 30,
+    "winRate": 0.7333333333333333,
+    "wavesP5": 23,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.9,
+    "minutesP5": 21.6,
+    "minutesP95": 27.8,
+    "winRateCI95": [
+      0.5555169795568831,
+      0.8581750444608938
+    ],
+    "meanInterestShare": 0.043113951708707514,
+    "replayVerified": 30
+  },
+  {
+    "case": "startGold10500",
+    "data": "demo-1+startGold10500",
+    "policy": "greedy",
+    "runs": 30,
+    "winRate": 0.8,
+    "wavesP5": 22,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.5,
+    "minutesP5": 19.2,
+    "minutesP95": 27.8,
+    "winRateCI95": [
+      0.6269395261897256,
+      0.9049502189759876
+    ],
+    "meanInterestShare": 0.012727837998612762,
+    "replayVerified": 30
+  },
+  {
+    "case": "startGold10500",
+    "data": "demo-1+startGold10500",
+    "policy": "random",
+    "runs": 30,
+    "winRate": 0.03333333333333333,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 29,
+    "minutesP50": 1.1,
+    "minutesP5": 0.9,
+    "minutesP95": 29.2,
+    "winRateCI95": [
+      0.0059084379948573795,
+      0.16670751396958874
+    ],
+    "meanInterestShare": 0.06677382809558288,
+    "replayVerified": 30
+  },
+  {
+    "case": "startGold10500",
+    "data": "demo-1+startGold10500",
+    "policy": "greedy-reserve60",
+    "runs": 30,
+    "winRate": 0.7666666666666667,
+    "wavesP5": 23,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 26,
+    "minutesP5": 21.2,
+    "minutesP95": 28,
+    "winRateCI95": [
+      0.5907132766967574,
+      0.8820776078949878
+    ],
+    "meanInterestShare": 0.044529140483836736,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestBp9500",
+    "data": "demo-1+interestBp9500",
+    "policy": "greedy",
+    "runs": 30,
+    "winRate": 0.7333333333333333,
+    "wavesP5": 20,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.6,
+    "minutesP5": 18.1,
+    "minutesP95": 27.6,
+    "winRateCI95": [
+      0.5555169795568831,
+      0.8581750444608938
+    ],
+    "meanInterestShare": 0.011860373063954465,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestBp9500",
+    "data": "demo-1+interestBp9500",
+    "policy": "random",
+    "runs": 30,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 26,
+    "minutesP50": 1.1,
+    "minutesP5": 0.9,
+    "minutesP95": 27.1,
+    "winRateCI95": [
+      0,
+      0.113517091390478
+    ],
+    "meanInterestShare": 0.05717522510150996,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestBp9500",
+    "data": "demo-1+interestBp9500",
+    "policy": "greedy-reserve60",
+    "runs": 30,
+    "winRate": 0.7333333333333333,
+    "wavesP5": 22,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.8,
+    "minutesP5": 18.9,
+    "minutesP95": 27.8,
+    "winRateCI95": [
+      0.5555169795568831,
+      0.8581750444608938
+    ],
+    "meanInterestShare": 0.041042759488321916,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestBp10500",
+    "data": "demo-1+interestBp10500",
+    "policy": "greedy",
+    "runs": 30,
+    "winRate": 0.7666666666666667,
+    "wavesP5": 20,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.6,
+    "minutesP5": 18.1,
+    "minutesP95": 27.9,
+    "winRateCI95": [
+      0.5907132766967574,
+      0.8820776078949878
+    ],
+    "meanInterestShare": 0.012817161169415909,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestBp10500",
+    "data": "demo-1+interestBp10500",
+    "policy": "random",
+    "runs": 30,
+    "winRate": 0.03333333333333333,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 29,
+    "minutesP50": 1.1,
+    "minutesP5": 0.9,
+    "minutesP95": 29.6,
+    "winRateCI95": [
+      0.0059084379948573795,
+      0.16670751396958874
+    ],
+    "meanInterestShare": 0.057687047110344294,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestBp10500",
+    "data": "demo-1+interestBp10500",
+    "policy": "greedy-reserve60",
+    "runs": 30,
+    "winRate": 0.8333333333333334,
+    "wavesP5": 23,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.7,
+    "minutesP5": 21.4,
+    "minutesP95": 28.4,
+    "winRateCI95": [
+      0.6643529481431982,
+      0.9266356575964831
+    ],
+    "meanInterestShare": 0.04607130440590399,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestCapGold9500",
+    "data": "demo-1+interestCapGold9500",
+    "policy": "greedy",
+    "runs": 30,
+    "winRate": 0.7666666666666667,
+    "wavesP5": 20,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.5,
+    "minutesP5": 18.1,
+    "minutesP95": 27.9,
+    "winRateCI95": [
+      0.5907132766967574,
+      0.8820776078949878
+    ],
+    "meanInterestShare": 0.0126740469257992,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestCapGold9500",
+    "data": "demo-1+interestCapGold9500",
+    "policy": "random",
+    "runs": 30,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 28,
+    "minutesP50": 1.1,
+    "minutesP5": 0.9,
+    "minutesP95": 28.6,
+    "winRateCI95": [
+      0,
+      0.113517091390478
+    ],
+    "meanInterestShare": 0.05751136495635822,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestCapGold9500",
+    "data": "demo-1+interestCapGold9500",
+    "policy": "greedy-reserve60",
+    "runs": 30,
+    "winRate": 0.7333333333333333,
+    "wavesP5": 22,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.7,
+    "minutesP5": 20.2,
+    "minutesP95": 27.9,
+    "winRateCI95": [
+      0.5555169795568831,
+      0.8581750444608938
+    ],
+    "meanInterestShare": 0.04375345694209767,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestCapGold10500",
+    "data": "demo-1+interestCapGold10500",
+    "policy": "greedy",
+    "runs": 30,
+    "winRate": 0.7666666666666667,
+    "wavesP5": 20,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.5,
+    "minutesP5": 18.1,
+    "minutesP95": 27.9,
+    "winRateCI95": [
+      0.5907132766967574,
+      0.8820776078949878
+    ],
+    "meanInterestShare": 0.0126740469257992,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestCapGold10500",
+    "data": "demo-1+interestCapGold10500",
+    "policy": "random",
+    "runs": 30,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 28,
+    "minutesP50": 1.1,
+    "minutesP5": 0.9,
+    "minutesP95": 28.6,
+    "winRateCI95": [
+      0,
+      0.113517091390478
+    ],
+    "meanInterestShare": 0.05751136495635822,
+    "replayVerified": 30
+  },
+  {
+    "case": "interestCapGold10500",
+    "data": "demo-1+interestCapGold10500",
+    "policy": "greedy-reserve60",
+    "runs": 30,
+    "winRate": 0.7333333333333333,
+    "wavesP5": 22,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.7,
+    "minutesP5": 20.2,
+    "minutesP95": 27.9,
+    "winRateCI95": [
+      0.5555169795568831,
+      0.8581750444608938
+    ],
+    "meanInterestShare": 0.04375345694209767,
+    "replayVerified": 30
+  },
+  {
+    "case": "budget9500",
+    "data": "demo-1+budget9500",
+    "policy": "greedy",
+    "runs": 30,
+    "winRate": 0.7333333333333333,
+    "wavesP5": 21,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.6,
+    "minutesP5": 18.3,
+    "minutesP95": 27.3,
+    "winRateCI95": [
+      0.5555169795568831,
+      0.8581750444608938
+    ],
+    "meanInterestShare": 0.012404072259388386,
+    "replayVerified": 30
+  },
+  {
+    "case": "budget9500",
+    "data": "demo-1+budget9500",
+    "policy": "random",
+    "runs": 30,
+    "winRate": 0.1,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 30,
+    "minutesP50": 1.1,
+    "minutesP5": 0.9,
+    "minutesP95": 28.9,
+    "winRateCI95": [
+      0.03459925995971615,
+      0.25621441315266624
+    ],
+    "meanInterestShare": 0.05886773682643917,
+    "replayVerified": 30
+  },
+  {
+    "case": "budget9500",
+    "data": "demo-1+budget9500",
+    "policy": "greedy-reserve60",
+    "runs": 30,
+    "winRate": 0.7666666666666667,
+    "wavesP5": 22,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.4,
+    "minutesP5": 18.9,
+    "minutesP95": 27.7,
+    "winRateCI95": [
+      0.5907132766967574,
+      0.8820776078949878
+    ],
+    "meanInterestShare": 0.043081438646171165,
+    "replayVerified": 30
+  },
+  {
+    "case": "budget10500",
+    "data": "demo-1+budget10500",
+    "policy": "greedy",
+    "runs": 30,
+    "winRate": 0.7,
+    "wavesP5": 20,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.8,
+    "minutesP5": 17.9,
+    "minutesP95": 27.7,
+    "winRateCI95": [
+      0.5212387898833981,
+      0.8333543735604105
+    ],
+    "meanInterestShare": 0.012704743389482704,
+    "replayVerified": 30
+  },
+  {
+    "case": "budget10500",
+    "data": "demo-1+budget10500",
+    "policy": "random",
+    "runs": 30,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 27,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 27.4,
+    "winRateCI95": [
+      0,
+      0.113517091390478
+    ],
+    "meanInterestShare": 0.08357729507839036,
+    "replayVerified": 30
+  },
+  {
+    "case": "budget10500",
+    "data": "demo-1+budget10500",
+    "policy": "greedy-reserve60",
+    "runs": 30,
+    "winRate": 0.7333333333333333,
+    "wavesP5": 22,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 26.3,
+    "minutesP5": 20.2,
+    "minutesP95": 29,
+    "winRateCI95": [
+      0.5555169795568831,
+      0.8581750444608938
+    ],
+    "meanInterestShare": 0.0436592395316275,
+    "replayVerified": 30
+  }
+]

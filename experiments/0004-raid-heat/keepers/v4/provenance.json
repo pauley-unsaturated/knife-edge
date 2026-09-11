@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "candidate": "v4",
+  "selection": "Tuning seeds 1–16, selected causal witnesses; not held-out population estimates",
+  "methodFiles": [
+    "experiments/0004-raid-heat/v4-witnesses.ts",
+    "experiments/0004-raid-heat/engine-choices.ts",
+    "experiments/0004-raid-heat/judge-report.ts"
+  ],
+  "sourceSha256": {
+    "packages/sim/src/combos.ts": "09ec30d4d30d1b437e85a214568940d04c9e4de1903b16510725e7be2f1016d6",
+    "packages/sim/src/composer.ts": "6d1b18ded466706e3a41f70d6a7c55d020328b5c5b62c3e491086082005f07ce",
+    "packages/sim/src/data.ts": "eaba33784a590cdf178b80c5c785f093ca1ee091b846016917717166e4b1518a",
+    "packages/sim/src/drops.ts": "99d9fcf9f51a12dab3a7d49c1c3dcd10abe10ca3693aa8ae98716b3092cafd36",
+    "packages/sim/src/effects.ts": "ffa2341a496a7a78e13bb68def729849f4f0ba7ad8816946000a92434a5438c5",
+    "packages/sim/src/fixed.ts": "95ebbba64bc832c0f3b16f2dcf6834d287cfb45bfc2886a2b54314b656391128",
+    "packages/sim/src/grid.ts": "180da95508fb988da6cdc1af95f38d162b1adce9fdeeb70bbf8f8e3d032ef707",
+    "packages/sim/src/index.ts": "0447ef1feca81780eebe001e60b215ea80dcdc2c9fb14d7a7b1771d59876b703",
+    "packages/sim/src/replay.ts": "16d2baf32f2e51c8c8c20c3785b6a83c06eaf8f5f6f664f7208d8e6be8517c74",
+    "packages/sim/src/rng.ts": "50775101b9ad2f271e624db01a5c8353292aee8fda35dac3d04711327fa8fa75",
+    "packages/sim/src/world.ts": "7fca3bd93aa242ad695802895775f05991425485e8c7266e057c3a0fcb48b3af",
+    "tools/balance/src/policies/engineer.ts": "522ebae187c5c2e3cdeeb339ea04cb14688e2d029a5b6480189de632f14b8abe",
+    "tools/balance/src/policies/greedy.ts": "2f5f53e31ffede21341d8e3172df2d95964b18a4b19630ebe53b0cdcb78d341b",
+    "tools/balance/src/policies/index.ts": "64e91f10544766974c5a8cf1967a549b41287fba715fbb87c2cf761b4440c6b9",
+    "tools/balance/src/policies/learning.ts": "25b00c8424b2383f9b6219336067436b5c354510a4136d9f76726b11bc17418a",
+    "tools/balance/src/policies/path-guard.ts": "79d5f866fb01cfd06836ec12869587ab485fa8395bc85dc1f6973b257fdc70b1",
+    "tools/balance/src/policies/profile.ts": "8711e438c482b83c42a8f8d1aa02e10e9cad69c2a5f2d6d1940a68baec9a7b1b",
+    "tools/balance/src/policies/raider.ts": "7da4f317951c368087edaba7b7b757bab73ab92530653f4c2a62829f176c8f5b",
+    "tools/balance/src/policies/random.ts": "1810876883ab909a1789a052065cf203edd2e94690c6e2c777c44e2e785aba09",
+    "tools/balance/src/engine-validation.ts": "9d9eaca775d1e1b7f55938df7cdd79c0778e355c6ee366d40b2d0b0fd49be9cb",
+    "tools/balance/src/exploration.ts": "cfbe4455d485fb1985271a267715fa2f1512b9c93c901fcf0b971fd5b2b84718",
+    "tools/balance/src/runner.ts": "ed08fc5d9ec60c0b41667647d66266ecf761865dee96383265867c5a06823f44",
+    "tools/balance/src/policy.ts": "325206821895d126ea2794c91bfbb323fd3e1f5bb9b68dfec0dfdd3d0f4a765b",
+    "experiments/0004-raid-heat/validate-engines.ts": "31a1bea6bbe341bfa01b3cd7cf2af8c3a1234cbb4fe1a924a105ac22192877d1",
+    "experiments/0004-raid-heat/candidate-v4/raid.json": "72414bbe2dd10a8098295768bb9d6a296cc958829c4333fbc1a16882e513966f",
+    "experiments/0004-raid-heat/candidate-v4/compound.json": "3cbb0291ec5e1310758f1deae025e54529e51eeccc670a6de3197e897a5e04eb",
+    "experiments/0004-raid-heat/candidate-v4/pact.json": "ee3ffdf86d6a7226d676a88c7b5ba813e35d62f657620e466fc28a3b111ef8b8"
+  },
+  "heldoutFingerprints": {
+    "configs": {
+      "raid": "82097f68d36889be6dee04975eee7e3ea3953f20f712b6c68e545553eadb3ed4",
+      "compound": "3fb3954d3cca26844cd1003f7d5dd9bc8e64e78c00fa3e08978abf1f9a0a0d8a",
+      "pact": "9d3322011cbb96a859cf1b6496c394430148fe32ad06bc0455fc653de0b76f0e"
+    },
+    "sim": "cbd54ccac6c68ac4f32def70dd37683919a578cc4502c514a0499a95d88222d6",
+    "policies": "212d4f793052df0f7c87fc2985d6f2d0013cea7e0093417473a100378113d4d4",
+    "helpers": "37631defc68e1c028694f05e82a82484d721133fd20a077097e09c0321b69642",
+    "simSources": {
+      "packages/sim/src/combos.ts": "09ec30d4d30d1b437e85a214568940d04c9e4de1903b16510725e7be2f1016d6",
+      "packages/sim/src/composer.ts": "6d1b18ded466706e3a41f70d6a7c55d020328b5c5b62c3e491086082005f07ce",
+      "packages/sim/src/data.ts": "eaba33784a590cdf178b80c5c785f093ca1ee091b846016917717166e4b1518a",
+      "packages/sim/src/drops.ts": "99d9fcf9f51a12dab3a7d49c1c3dcd10abe10ca3693aa8ae98716b3092cafd36",
+      "packages/sim/src/effects.ts": "ffa2341a496a7a78e13bb68def729849f4f0ba7ad8816946000a92434a5438c5",
+      "packages/sim/src/fixed.ts": "95ebbba64bc832c0f3b16f2dcf6834d287cfb45bfc2886a2b54314b656391128",
+      "packages/sim/src/grid.ts": "180da95508fb988da6cdc1af95f38d162b1adce9fdeeb70bbf8f8e3d032ef707",
+      "packages/sim/src/index.ts": "0447ef1feca81780eebe001e60b215ea80dcdc2c9fb14d7a7b1771d59876b703",
+      "packages/sim/src/replay.ts": "16d2baf32f2e51c8c8c20c3785b6a83c06eaf8f5f6f664f7208d8e6be8517c74",
+      "packages/sim/src/rng.ts": "50775101b9ad2f271e624db01a5c8353292aee8fda35dac3d04711327fa8fa75",
+      "packages/sim/src/world.ts": "7fca3bd93aa242ad695802895775f05991425485e8c7266e057c3a0fcb48b3af"
+    },
+    "policySources": {
+      "tools/balance/src/policies/engineer.ts": "522ebae187c5c2e3cdeeb339ea04cb14688e2d029a5b6480189de632f14b8abe",
+      "tools/balance/src/policies/greedy.ts": "2f5f53e31ffede21341d8e3172df2d95964b18a4b19630ebe53b0cdcb78d341b",
+      "tools/balance/src/policies/index.ts": "64e91f10544766974c5a8cf1967a549b41287fba715fbb87c2cf761b4440c6b9",
+      "tools/balance/src/policies/learning.ts": "25b00c8424b2383f9b6219336067436b5c354510a4136d9f76726b11bc17418a",
+      "tools/balance/src/policies/path-guard.ts": "79d5f866fb01cfd06836ec12869587ab485fa8395bc85dc1f6973b257fdc70b1",
+      "tools/balance/src/policies/profile.ts": "8711e438c482b83c42a8f8d1aa02e10e9cad69c2a5f2d6d1940a68baec9a7b1b",
+      "tools/balance/src/policies/raider.ts": "7da4f317951c368087edaba7b7b757bab73ab92530653f4c2a62829f176c8f5b",
+      "tools/balance/src/policies/random.ts": "1810876883ab909a1789a052065cf203edd2e94690c6e2c777c44e2e785aba09"
+    },
+    "helperSources": {
+      "tools/balance/src/engine-validation.ts": "9d9eaca775d1e1b7f55938df7cdd79c0778e355c6ee366d40b2d0b0fd49be9cb",
+      "tools/balance/src/exploration.ts": "cfbe4455d485fb1985271a267715fa2f1512b9c93c901fcf0b971fd5b2b84718",
+      "tools/balance/src/runner.ts": "ed08fc5d9ec60c0b41667647d66266ecf761865dee96383265867c5a06823f44",
+      "tools/balance/src/policy.ts": "325206821895d126ea2794c91bfbb323fd3e1f5bb9b68dfec0dfdd3d0f4a765b",
+      "experiments/0004-raid-heat/validate-engines.ts": "31a1bea6bbe341bfa01b3cd7cf2af8c3a1234cbb4fe1a924a105ac22192877d1"
+    }
+  },
+  "keepers": [
+    {
+      "file": "poison-ember-win-1.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/raid-engineer-1.replay.json",
+      "sha256": "90b2c5ac6ade111ae90755e9399e05096ad7b89362d837a14045c415f1e3d526",
+      "dataVersion": "demo-4-raid/medium",
+      "embeddedDataSha256": "ddaffe73542b1040705cc01e9966b9370bc9a0c16e1738d551735cba189075ae",
+      "seed": 1,
+      "endTick": 7141,
+      "finalHash": 4253844710
+    },
+    {
+      "file": "poison-disabled-loss-1.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/raid-engineer-1-no-poison.replay.json",
+      "sha256": "2efa2999642ec722ca87e15aeb4b9e0be79f497d64fed1cfc7f0ad83135698b5",
+      "dataVersion": "demo-4-raid/medium/judge-no-poison",
+      "embeddedDataSha256": "0a675fbea34014b7aed0b39d65cfd26f984bceec60464cbd2ebd1f2977436d83",
+      "seed": 1,
+      "endTick": 5372,
+      "finalHash": 3656979611
+    },
+    {
+      "file": "conductive-arc-win-5.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/raid-engineer-5.replay.json",
+      "sha256": "2f4f1f3c2e0ab386836a5e01c5bcad81cbb85eb3b4414ae58e06932b0795feaa",
+      "dataVersion": "demo-4-raid/medium",
+      "embeddedDataSha256": "ddaffe73542b1040705cc01e9966b9370bc9a0c16e1738d551735cba189075ae",
+      "seed": 5,
+      "endTick": 9824,
+      "finalHash": 3586766559
+    },
+    {
+      "file": "conductive-disabled-loss-5.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/raid-engineer-5-no-conductive.replay.json",
+      "sha256": "65de548e0e7ee4e9f34535985922f39a228de239ab937117cf26281a23f07b96",
+      "dataVersion": "demo-4-raid/medium/judge-no-conductive",
+      "embeddedDataSha256": "9e503e9f139acbe6c1d6c1fe9f7a1cd4413ad88353ce06e664c679dfad88878a",
+      "seed": 5,
+      "endTick": 7048,
+      "finalHash": 3269479261
+    },
+    {
+      "file": "death-burst-win-2.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/raid-engineer-2.replay.json",
+      "sha256": "cb6193bfae2796401e565bcf95c3620a422393c71294d3ce17049b9a9152855c",
+      "dataVersion": "demo-4-raid/medium",
+      "embeddedDataSha256": "ddaffe73542b1040705cc01e9966b9370bc9a0c16e1738d551735cba189075ae",
+      "seed": 2,
+      "endTick": 7143,
+      "finalHash": 3413136409
+    },
+    {
+      "file": "death-burst-disabled-loss-2.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/raid-engineer-2-no-burst.replay.json",
+      "sha256": "39cfbeff5286e36d5bd6ae9062ee2faa3697a9ca10da135d55acb6181271f972",
+      "dataVersion": "demo-4-raid/medium/judge-no-burst",
+      "embeddedDataSha256": "99dc96efa3aa9524eb438bad329b91c3321961712be006f11d1ca5d36a571cc5",
+      "seed": 2,
+      "endTick": 5337,
+      "finalHash": 1478407797
+    },
+    {
+      "file": "compound-investment-win-15.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/compound-guarded-banker-15-at2380-compound.replay.json",
+      "sha256": "ed98f6d97bd448c45c805df1ddc35f78d91146dedfa77dbb7a5ab8abe000ad38",
+      "dataVersion": "demo-4-compound/medium",
+      "embeddedDataSha256": "c35b3c6c64290b9762c6a8d165b831628b2b811608105739557b084b6217ab25",
+      "seed": 15,
+      "endTick": 9651,
+      "finalHash": 3237922347
+    },
+    {
+      "file": "compound-immediate-control-loss-15.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/compound-guarded-banker-15-at2380-black-ice.replay.json",
+      "sha256": "1c26842f35f8ec65546f85cc2d94f0005dddcb2cf07ef40fb548a02b87c33d7c",
+      "dataVersion": "demo-4-compound/medium",
+      "embeddedDataSha256": "c35b3c6c64290b9762c6a8d165b831628b2b811608105739557b084b6217ab25",
+      "seed": 15,
+      "endTick": 10010,
+      "finalHash": 3197979520
+    },
+    {
+      "file": "pact-low-core-win-6.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/pact-guarded-pact-6-at2360-last-stand.replay.json",
+      "sha256": "d1d5b2a4fcd90abfeab11aad052c9c0c06f4c9ae6d7a950342c61ebad05eec41",
+      "dataVersion": "demo-4-pact/medium",
+      "embeddedDataSha256": "ce0d334d8ee45426ed66c6d5d364999bf935ffe3db504eb276afd4d3c990e64a",
+      "seed": 6,
+      "endTick": 7380,
+      "finalHash": 1424335950
+    },
+    {
+      "file": "pact-poison-alternative-loss-6.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/pact-guarded-pact-6-at2360-venom.replay.json",
+      "sha256": "64ab463505552ec380e19092290316369ee70d75a99021d786b71acc5738c5f0",
+      "dataVersion": "demo-4-pact/medium",
+      "embeddedDataSha256": "ce0d334d8ee45426ed66c6d5d364999bf935ffe3db504eb276afd4d3c990e64a",
+      "seed": 6,
+      "endTick": 9000,
+      "finalHash": 2488330695
+    },
+    {
+      "file": "pact-sacrifice-win-10.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/pact-guarded-pact-10-at840-blood-price.replay.json",
+      "sha256": "dd80526aaa6fb53f1540799781fcda20b401bfc084c731c400d8d4e09cf9b8ec",
+      "dataVersion": "demo-4-pact/medium",
+      "embeddedDataSha256": "ce0d334d8ee45426ed66c6d5d364999bf935ffe3db504eb276afd4d3c990e64a",
+      "seed": 10,
+      "endTick": 8413,
+      "finalHash": 818045073
+    },
+    {
+      "file": "pact-thermal-alternative-loss-10.replay.json",
+      "source": "experiments/0004-raid-heat/out/v4-witnesses-1-16/pact-guarded-pact-10-at840-hot-wire.replay.json",
+      "sha256": "134e62bf2a757aeaf5b905e0207e73a62341fc801c45309ff00e05601b00f9f3",
+      "dataVersion": "demo-4-pact/medium",
+      "embeddedDataSha256": "ce0d334d8ee45426ed66c6d5d364999bf935ffe3db504eb276afd4d3c990e64a",
+      "seed": 10,
+      "endTick": 6924,
+      "finalHash": 3074378413
+    },
+    {
+      "file": "reroll-rescue-win-4.replay.json",
+      "source": "experiments/0004-raid-heat/out/driver-review-v4/medium/choices-engineer-prepared-reroll/4-2920-driver.replay.json",
+      "sha256": "f4593d0082b4e7065ab2f18cba23274b206f5bf1e199121c8aa79c5dedbed8b9",
+      "dataVersion": "demo-4-raid/medium",
+      "embeddedDataSha256": "ddaffe73542b1040705cc01e9966b9370bc9a0c16e1738d551735cba189075ae",
+      "seed": 4,
+      "endTick": 6195,
+      "finalHash": 2982987969
+    },
+    {
+      "file": "reroll-keep-visible-loss-4.replay.json",
+      "source": "experiments/0004-raid-heat/out/driver-review-v4/medium/choices-engineer-prepared-reroll/4-2920-keep-visible.replay.json",
+      "sha256": "220a39a4803407999f7909567c12f0fbb726944cd891a0fe68c8025e44d176c3",
+      "dataVersion": "demo-4-raid/medium",
+      "embeddedDataSha256": "ddaffe73542b1040705cc01e9966b9370bc9a0c16e1738d551735cba189075ae",
+      "seed": 4,
+      "endTick": 5399,
+      "finalHash": 3570711205
+    }
+  ],
+  "methodSourceSha256": {
+    "experiments/0004-raid-heat/v4-witnesses.ts": "09aa3e8d870e7c73b319ddb6818aab4dd4afc6488a9baab75771d8f4243f106f",
+    "experiments/0004-raid-heat/engine-choices.ts": "6ccc9c9e5f2d2cdb2077024cf3a19611a38ecc59e377fdfd1e31ea57e961f5b6",
+    "experiments/0004-raid-heat/judge-report.ts": "85e39abc9e3ce3c0b80beef02057ab90378b0aa3348ed7c9812f9085be9cc735"
+  }
+}

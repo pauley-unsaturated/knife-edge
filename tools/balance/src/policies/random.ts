@@ -1,4 +1,11 @@
-import { canBuild, nextInt, type Command, type GameData, type RngState, type State } from "@knife-edge/sim";
+import {
+  canBuild,
+  nextInt,
+  type Command,
+  type GameData,
+  type RngState,
+  type State,
+} from "@knife-edge/sim";
 import type { Policy } from "../policy.js";
 
 /** Floor of the bot ladder: builds on random legal cells whenever it can afford to. */

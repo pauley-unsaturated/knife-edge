@@ -14,6 +14,16 @@ export function mulBp(value: number, rateBp: number): number {
   return Math.floor((value * rateBp + BP / 2) / BP);
 }
 
+/** Integer damage from a BP-scaled per-tick rate. Equivalent to the difference
+ * of consecutive floor(tick * rate / BP) values, without a large tick * rate
+ * product. Fractional phase products remain below BP² even on long replays. */
+export function bpRateTick(rate: number, tick: number): number {
+  const whole = Math.floor(rate / BP);
+  const fraction = rate % BP;
+  const phase = tick % BP;
+  return whole + Math.floor((phase + 1) * fraction / BP) - Math.floor(phase * fraction / BP);
+}
+
 /** base * (rateBp/BP)^n computed iteratively so every engine rounds identically. */
 export function growBp(base: number, rateBp: number, n: number): number {
   let v = base;

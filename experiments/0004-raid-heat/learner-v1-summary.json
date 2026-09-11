@@ -1,0 +1,1998 @@
+{
+  "manifest": {
+    "controllerHash": 2963884217,
+    "dependencies": [
+      {
+        "name": "raider",
+        "hash": 985561791
+      },
+      {
+        "name": "greedy",
+        "hash": 2930795645
+      },
+      {
+        "name": "path-guard",
+        "hash": 2558214542
+      }
+    ],
+    "seeds": {
+      "start": 301,
+      "end": 340
+    },
+    "purpose": "Fresh authorized held-out learner behavior and difficulty validation; no retuning",
+    "sources": {
+      "raid": {
+        "version": "demo-4-raid",
+        "playerProfiles": {
+          "deliberate": {
+            "decisionTicks": 80,
+            "maxActions": 1,
+            "missChanceBp": 0
+          },
+          "hesitant": {
+            "decisionTicks": 120,
+            "maxActions": 1,
+            "missChanceBp": 2500
+          },
+          "rushed4x": {
+            "decisionTicks": 320,
+            "maxActions": 1,
+            "missChanceBp": 0
+          }
+        },
+        "grid": {
+          "width": 20,
+          "height": 14,
+          "obstacles": 12
+        },
+        "economy": {
+          "startGold": 120,
+          "lives": 12,
+          "tickRate": 20,
+          "waveIntervalSec": 8,
+          "earlyCallBonusPerSec": 1,
+          "interestBp": 300,
+          "interestCapGold": 200,
+          "bountyBase": 3,
+          "bountyPerWave": 0,
+          "sellRefundBp": 7500,
+          "maxWaves": 18
+        },
+        "towers": [
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "bolt",
+            "damageType": "kinetic",
+            "cost": 30,
+            "damage": 8,
+            "rangeCells": 2.5,
+            "cooldownTicks": 10,
+            "costGrowthBp": 14500,
+            "damageGrowthBp": 19000,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "ember",
+            "damageType": "thermal",
+            "cost": 42,
+            "damage": 11,
+            "rangeCells": 2.5,
+            "cooldownTicks": 14,
+            "costGrowthBp": 14000,
+            "damageGrowthBp": 22000,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 5500,
+            "slowTicks": 35,
+            "auraBp": 0,
+            "id": "frost",
+            "damageType": "logic",
+            "cost": 38,
+            "damage": 4,
+            "rangeCells": 2.5,
+            "cooldownTicks": 16,
+            "costGrowthBp": 15000,
+            "damageGrowthBp": 16500,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 5,
+            "splashCells": 1.5,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "mortar",
+            "damageType": "burst",
+            "cost": 55,
+            "damage": 15,
+            "rangeCells": 3,
+            "cooldownTicks": 35,
+            "costGrowthBp": 16000,
+            "damageGrowthBp": 21000,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 3,
+            "splashCells": 2,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "arc",
+            "damageType": "chain",
+            "cost": 48,
+            "damage": 7,
+            "rangeCells": 2.5,
+            "cooldownTicks": 18,
+            "costGrowthBp": 16000,
+            "damageGrowthBp": 18000,
+            "adjacencyBonusBp": 1500
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "lens",
+            "damageType": "scanner",
+            "cost": 35,
+            "damage": 5,
+            "rangeCells": 4,
+            "cooldownTicks": 14,
+            "costGrowthBp": 15500,
+            "damageGrowthBp": 17500,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 2000,
+            "id": "relay",
+            "damageType": "support",
+            "cost": 45,
+            "damage": 3,
+            "rangeCells": 2.5,
+            "cooldownTicks": 20,
+            "costGrowthBp": 14000,
+            "damageGrowthBp": 15000,
+            "adjacencyBonusBp": 2000
+          },
+          {
+            "levels": 3,
+            "rangeGrowthBp": 14000,
+            "targets": 3,
+            "splashCells": 1.5,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "sprayer",
+            "damageType": "support",
+            "cost": 36,
+            "damage": 2,
+            "rangeCells": 2.5,
+            "cooldownTicks": 18,
+            "costGrowthBp": 13000,
+            "damageGrowthBp": 13000,
+            "adjacencyBonusBp": 0,
+            "coating": "wet",
+            "coatingTicks": 60,
+            "preferFreshCoating": true
+          },
+          {
+            "levels": 3,
+            "rangeGrowthBp": 14000,
+            "targets": 2,
+            "splashCells": 1.5,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "solvent",
+            "damageType": "support",
+            "cost": 40,
+            "damage": 2,
+            "rangeCells": 2.5,
+            "cooldownTicks": 20,
+            "costGrowthBp": 13000,
+            "damageGrowthBp": 13000,
+            "adjacencyBonusBp": 0,
+            "coating": "oil",
+            "coatingTicks": 60,
+            "preferFreshCoating": true
+          }
+        ],
+        "enemies": [
+          {
+            "id": "grunt",
+            "hp": 32,
+            "speedUpt": 64,
+            "budgetCost": 10,
+            "unlockWave": 1,
+            "tags": []
+          },
+          {
+            "id": "swift",
+            "hp": 22,
+            "speedUpt": 120,
+            "budgetCost": 12,
+            "unlockWave": 2,
+            "tags": [
+              "swift"
+            ]
+          },
+          {
+            "id": "armored",
+            "hp": 70,
+            "speedUpt": 52,
+            "budgetCost": 20,
+            "unlockWave": 2,
+            "tags": [
+              "armored"
+            ]
+          },
+          {
+            "id": "swarm",
+            "hp": 20,
+            "speedUpt": 80,
+            "budgetCost": 8,
+            "unlockWave": 5,
+            "tags": [
+              "fragmenting"
+            ]
+          },
+          {
+            "id": "shade",
+            "hp": 35,
+            "speedUpt": 72,
+            "budgetCost": 14,
+            "unlockWave": 9,
+            "tags": [
+              "stealth"
+            ]
+          }
+        ],
+        "composer": {
+          "budgetBase": 180,
+          "growthBp": 11800,
+          "riddleEvery": 4,
+          "spawnIntervalTicks": 16,
+          "hpGrowthBp": 10700,
+          "maxEnemiesPerWave": 18,
+          "openingBudgets": [
+            60,
+            200,
+            250
+          ]
+        },
+        "difficulties": {
+          "easy": {
+            "defenseCostBp": 7000,
+            "description": "Cheaper defense gives you room to learn the drops. Armor arrives on wave 2: read the preview."
+          },
+          "medium": {
+            "defenseCostBp": 10000,
+            "description": "Build an engine before the wave 12–15 wall. Offers steer your plan; they do not lock it."
+          },
+          "hard": {
+            "defenseCostBp": 12500,
+            "description": "Tight build prices. Strong combinations and a carefully preserved kill zone are essential."
+          }
+        },
+        "damageMatrix": {
+          "kinetic": {
+            "armored": 5500,
+            "swift": 12500
+          },
+          "thermal": {
+            "armored": 17500,
+            "swift": 7500
+          },
+          "logic": {
+            "swift": 15000
+          },
+          "burst": {
+            "fragmenting": 17500,
+            "armored": 8000
+          },
+          "chain": {
+            "fragmenting": 15000,
+            "armored": 7500
+          },
+          "scanner": {
+            "stealth": 17500
+          },
+          "support": {}
+        },
+        "stealthDamageBp": 6000,
+        "relicRules": {
+          "everyWaves": 3,
+          "offerCount": 2,
+          "responseBp": 0,
+          "godPowerBp": 14000,
+          "firstOfferWave": 2,
+          "stackBonusBp": 500,
+          "rerollBaseGold": 25,
+          "rerollGrowthBp": 16000,
+          "maxRerolls": 3
+        },
+        "relics": [
+          {
+            "id": "overclock",
+            "name": "Overclock",
+            "description": "Every tower deals 25% more damage. Stacks multiply.",
+            "damageType": "all",
+            "damageBp": 12500,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "cold-front",
+            "name": "Cold front",
+            "description": "Slowed enemies take 75% more damage. Stacks multiply. Build a Frost kill zone.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 17500,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "hot-wire",
+            "name": "Hot wire",
+            "description": "Ember damage +80%. Stacks multiply.",
+            "damageType": "thermal",
+            "damageBp": 18000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "conductive",
+            "name": "Conductive",
+            "description": "Arc damage +80%. Stacks multiply.",
+            "damageType": "chain",
+            "damageBp": 18000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "compound",
+            "name": "Compound",
+            "description": "Interest +3 percentage points. Bank cap still applies. Power later, no damage now.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 300,
+            "offerWeight": 4
+          },
+          {
+            "id": "chain-reaction",
+            "name": "Chain reaction",
+            "description": "Kills explode for 45% of the victim’s max HP within 2 cells. Explosions can trigger more explosions. Stacks add.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "deathBurstBp": 4500,
+            "deathBurstRadiusFp": 2048,
+            "offerWeight": 1
+          },
+          {
+            "id": "venom",
+            "name": "Venom rounds",
+            "description": "Hits add poison worth 45% of hit damage over 3s, up to 8 doses. Hits refresh duration; stronger hits raise the dose ceiling. Copies strengthen doses.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 2,
+            "poisonDamageBp": 4500,
+            "poisonTicks": 60
+          },
+          {
+            "id": "black-ice",
+            "name": "Black ice",
+            "description": "Every hit slows to 85% speed for 1.5s. Copies multiply speed and add duration; floor 25%. Refreshes the strongest slow. Enables Cold Front.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 2,
+            "hitSlowBp": 8500,
+            "hitSlowTicks": 30
+          },
+          {
+            "id": "mutiny",
+            "name": "Mutiny",
+            "description": "Hits confuse for 4s. Every 2s the enemy strikes another nearby enemy for 12% of its own max HP. Copies add damage and duration. No self-hits.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 1,
+            "confusionDamageBp": 1200,
+            "confusionTicks": 80
+          }
+        ],
+        "raids": {
+          "hpPerRaidBp": 3500,
+          "hastePerRaidBp": 2000,
+          "hideouts": [
+            {
+              "id": "garage",
+              "name": "The Garage",
+              "enemy": "swift",
+              "gold": 90
+            },
+            {
+              "id": "foundry",
+              "name": "The Foundry",
+              "enemy": "armored",
+              "gold": 110
+            },
+            {
+              "id": "warren",
+              "name": "The Warren",
+              "enemy": "swarm",
+              "gold": 75
+            }
+          ]
+        },
+        "effectRules": {
+          "minSlowBp": 2500,
+          "poisonStackCap": 8,
+          "confusionIntervalTicks": 40,
+          "confusionRadiusFp": 1536,
+          "wetLightningBp": 15000,
+          "wetSlowBp": 7500,
+          "oilHitBp": 17500,
+          "oilBurnBp": 5000,
+          "oilBurnTicks": 60
+        }
+      },
+      "compound": {
+        "version": "demo-4-compound",
+        "playerProfiles": {
+          "deliberate": {
+            "decisionTicks": 80,
+            "maxActions": 1,
+            "missChanceBp": 0
+          },
+          "hesitant": {
+            "decisionTicks": 120,
+            "maxActions": 1,
+            "missChanceBp": 2500
+          },
+          "rushed4x": {
+            "decisionTicks": 320,
+            "maxActions": 1,
+            "missChanceBp": 0
+          }
+        },
+        "grid": {
+          "width": 20,
+          "height": 14,
+          "obstacles": 12
+        },
+        "economy": {
+          "startGold": 120,
+          "lives": 12,
+          "tickRate": 20,
+          "waveIntervalSec": 8,
+          "earlyCallBonusPerSec": 1,
+          "interestBp": 500,
+          "interestCapGold": 400,
+          "bountyBase": 3,
+          "bountyPerWave": 0,
+          "sellRefundBp": 7500,
+          "maxWaves": 18
+        },
+        "towers": [
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "bolt",
+            "damageType": "kinetic",
+            "cost": 30,
+            "damage": 8,
+            "rangeCells": 2.5,
+            "cooldownTicks": 10,
+            "costGrowthBp": 14500,
+            "damageGrowthBp": 19000,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "ember",
+            "damageType": "thermal",
+            "cost": 42,
+            "damage": 11,
+            "rangeCells": 2.5,
+            "cooldownTicks": 14,
+            "costGrowthBp": 14000,
+            "damageGrowthBp": 22000,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 5500,
+            "slowTicks": 35,
+            "auraBp": 0,
+            "id": "frost",
+            "damageType": "logic",
+            "cost": 38,
+            "damage": 4,
+            "rangeCells": 2.5,
+            "cooldownTicks": 16,
+            "costGrowthBp": 15000,
+            "damageGrowthBp": 16500,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 5,
+            "splashCells": 1.5,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "mortar",
+            "damageType": "burst",
+            "cost": 55,
+            "damage": 15,
+            "rangeCells": 3,
+            "cooldownTicks": 35,
+            "costGrowthBp": 16000,
+            "damageGrowthBp": 21000,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 3,
+            "splashCells": 2,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "arc",
+            "damageType": "chain",
+            "cost": 48,
+            "damage": 7,
+            "rangeCells": 2.5,
+            "cooldownTicks": 18,
+            "costGrowthBp": 16000,
+            "damageGrowthBp": 18000,
+            "adjacencyBonusBp": 1500
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "lens",
+            "damageType": "scanner",
+            "cost": 35,
+            "damage": 5,
+            "rangeCells": 4,
+            "cooldownTicks": 14,
+            "costGrowthBp": 15500,
+            "damageGrowthBp": 17500,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 2000,
+            "id": "relay",
+            "damageType": "support",
+            "cost": 45,
+            "damage": 3,
+            "rangeCells": 2.5,
+            "cooldownTicks": 20,
+            "costGrowthBp": 14000,
+            "damageGrowthBp": 15000,
+            "adjacencyBonusBp": 2000
+          },
+          {
+            "levels": 3,
+            "rangeGrowthBp": 14000,
+            "targets": 3,
+            "splashCells": 1.5,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "sprayer",
+            "damageType": "support",
+            "cost": 36,
+            "damage": 2,
+            "rangeCells": 2.5,
+            "cooldownTicks": 18,
+            "costGrowthBp": 13000,
+            "damageGrowthBp": 13000,
+            "adjacencyBonusBp": 0,
+            "coating": "wet",
+            "coatingTicks": 60,
+            "preferFreshCoating": true
+          },
+          {
+            "levels": 3,
+            "rangeGrowthBp": 14000,
+            "targets": 2,
+            "splashCells": 1.5,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "solvent",
+            "damageType": "support",
+            "cost": 40,
+            "damage": 2,
+            "rangeCells": 2.5,
+            "cooldownTicks": 20,
+            "costGrowthBp": 13000,
+            "damageGrowthBp": 13000,
+            "adjacencyBonusBp": 0,
+            "coating": "oil",
+            "coatingTicks": 60,
+            "preferFreshCoating": true
+          }
+        ],
+        "enemies": [
+          {
+            "id": "grunt",
+            "hp": 32,
+            "speedUpt": 64,
+            "budgetCost": 10,
+            "unlockWave": 1,
+            "tags": []
+          },
+          {
+            "id": "swift",
+            "hp": 22,
+            "speedUpt": 120,
+            "budgetCost": 12,
+            "unlockWave": 2,
+            "tags": [
+              "swift"
+            ]
+          },
+          {
+            "id": "armored",
+            "hp": 70,
+            "speedUpt": 52,
+            "budgetCost": 20,
+            "unlockWave": 2,
+            "tags": [
+              "armored"
+            ]
+          },
+          {
+            "id": "swarm",
+            "hp": 20,
+            "speedUpt": 80,
+            "budgetCost": 8,
+            "unlockWave": 5,
+            "tags": [
+              "fragmenting"
+            ]
+          },
+          {
+            "id": "shade",
+            "hp": 35,
+            "speedUpt": 72,
+            "budgetCost": 14,
+            "unlockWave": 9,
+            "tags": [
+              "stealth"
+            ]
+          }
+        ],
+        "composer": {
+          "budgetBase": 180,
+          "growthBp": 11800,
+          "riddleEvery": 4,
+          "spawnIntervalTicks": 16,
+          "hpGrowthBp": 10600,
+          "maxEnemiesPerWave": 18,
+          "openingBudgets": [
+            60,
+            200,
+            250
+          ]
+        },
+        "difficulties": {
+          "easy": {
+            "defenseCostBp": 7000,
+            "description": "Cheaper defense gives you room to learn the drops. Armor arrives on wave 2: read the preview."
+          },
+          "medium": {
+            "defenseCostBp": 10000,
+            "description": "Build an engine before the wave 12–15 wall. Offers steer your plan; they do not lock it."
+          },
+          "hard": {
+            "defenseCostBp": 12500,
+            "description": "Tight build prices. Strong combinations and a carefully preserved kill zone are essential."
+          }
+        },
+        "damageMatrix": {
+          "kinetic": {
+            "armored": 5500,
+            "swift": 12500
+          },
+          "thermal": {
+            "armored": 17500,
+            "swift": 7500
+          },
+          "logic": {
+            "swift": 15000
+          },
+          "burst": {
+            "fragmenting": 17500,
+            "armored": 8000
+          },
+          "chain": {
+            "fragmenting": 15000,
+            "armored": 7500
+          },
+          "scanner": {
+            "stealth": 17500
+          },
+          "support": {}
+        },
+        "stealthDamageBp": 6000,
+        "relicRules": {
+          "everyWaves": 3,
+          "offerCount": 2,
+          "responseBp": 0,
+          "godPowerBp": 14000,
+          "firstOfferWave": 2,
+          "stackBonusBp": 500,
+          "rerollBaseGold": 25,
+          "rerollGrowthBp": 16000,
+          "maxRerolls": 3
+        },
+        "relics": [
+          {
+            "id": "overclock",
+            "name": "Overclock",
+            "description": "Every tower deals 25% more damage. Stacks multiply.",
+            "damageType": "all",
+            "damageBp": 12500,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "cold-front",
+            "name": "Cold front",
+            "description": "Slowed enemies take 40% more damage. Stacks multiply. Build a Frost kill zone.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 14000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "hot-wire",
+            "name": "Hot wire",
+            "description": "Ember damage +40%. Stacks multiply.",
+            "damageType": "thermal",
+            "damageBp": 14000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "conductive",
+            "name": "Conductive",
+            "description": "Arc damage +40%. Stacks multiply.",
+            "damageType": "chain",
+            "damageBp": 14000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "compound",
+            "name": "Compound engine",
+            "description": "Interest +2 points, then ×1.8 per stack. Bank capacity +300g. Survive on less defense now to fund a late buying spree.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 200,
+            "interestRateMultiplierBp": 18000,
+            "interestCapBonusGold": 300,
+            "offerWeight": 4
+          },
+          {
+            "id": "venom",
+            "name": "Venom rounds",
+            "description": "Hits add poison worth 45% of hit damage over 3s, up to 8 doses. Hits refresh duration; stronger hits raise the dose ceiling. Copies strengthen doses.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 2,
+            "poisonDamageBp": 4500,
+            "poisonTicks": 60
+          },
+          {
+            "id": "black-ice",
+            "name": "Black ice",
+            "description": "Every hit slows to 85% speed for 1.5s. Copies multiply speed and add duration; floor 25%. Refreshes the strongest slow. Enables Cold Front.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 2,
+            "hitSlowBp": 8500,
+            "hitSlowTicks": 30
+          },
+          {
+            "id": "mutiny",
+            "name": "Mutiny",
+            "description": "Hits confuse for 4s. Every 2s the enemy strikes another nearby enemy for 12% of its own max HP. Copies add damage and duration. No self-hits.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 1,
+            "confusionDamageBp": 1200,
+            "confusionTicks": 80
+          }
+        ],
+        "effectRules": {
+          "minSlowBp": 2500,
+          "poisonStackCap": 8,
+          "confusionIntervalTicks": 40,
+          "confusionRadiusFp": 1536,
+          "wetLightningBp": 15000,
+          "wetSlowBp": 7500,
+          "oilHitBp": 17500,
+          "oilBurnBp": 5000,
+          "oilBurnTicks": 60
+        }
+      },
+      "pact": {
+        "version": "demo-4-pact",
+        "playerProfiles": {
+          "deliberate": {
+            "decisionTicks": 80,
+            "maxActions": 1,
+            "missChanceBp": 0
+          },
+          "hesitant": {
+            "decisionTicks": 120,
+            "maxActions": 1,
+            "missChanceBp": 2500
+          },
+          "rushed4x": {
+            "decisionTicks": 320,
+            "maxActions": 1,
+            "missChanceBp": 0
+          }
+        },
+        "grid": {
+          "width": 20,
+          "height": 14,
+          "obstacles": 12
+        },
+        "economy": {
+          "startGold": 120,
+          "lives": 12,
+          "tickRate": 20,
+          "waveIntervalSec": 8,
+          "earlyCallBonusPerSec": 1,
+          "interestBp": 300,
+          "interestCapGold": 200,
+          "bountyBase": 3,
+          "bountyPerWave": 0,
+          "sellRefundBp": 7500,
+          "maxWaves": 18
+        },
+        "towers": [
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "bolt",
+            "damageType": "kinetic",
+            "cost": 30,
+            "damage": 8,
+            "rangeCells": 2.5,
+            "cooldownTicks": 10,
+            "costGrowthBp": 14500,
+            "damageGrowthBp": 19000,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "ember",
+            "damageType": "thermal",
+            "cost": 42,
+            "damage": 11,
+            "rangeCells": 2.5,
+            "cooldownTicks": 14,
+            "costGrowthBp": 14000,
+            "damageGrowthBp": 22000,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 5500,
+            "slowTicks": 35,
+            "auraBp": 0,
+            "id": "frost",
+            "damageType": "logic",
+            "cost": 38,
+            "damage": 4,
+            "rangeCells": 2.5,
+            "cooldownTicks": 16,
+            "costGrowthBp": 15000,
+            "damageGrowthBp": 16500,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 5,
+            "splashCells": 1.5,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "mortar",
+            "damageType": "burst",
+            "cost": 55,
+            "damage": 15,
+            "rangeCells": 3,
+            "cooldownTicks": 35,
+            "costGrowthBp": 16000,
+            "damageGrowthBp": 21000,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 3,
+            "splashCells": 2,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "arc",
+            "damageType": "chain",
+            "cost": 48,
+            "damage": 7,
+            "rangeCells": 2.5,
+            "cooldownTicks": 18,
+            "costGrowthBp": 16000,
+            "damageGrowthBp": 18000,
+            "adjacencyBonusBp": 1500
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "lens",
+            "damageType": "scanner",
+            "cost": 35,
+            "damage": 5,
+            "rangeCells": 4,
+            "cooldownTicks": 14,
+            "costGrowthBp": 15500,
+            "damageGrowthBp": 17500,
+            "adjacencyBonusBp": 0
+          },
+          {
+            "levels": 6,
+            "rangeGrowthBp": 10400,
+            "targets": 1,
+            "splashCells": 0,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 2000,
+            "id": "relay",
+            "damageType": "support",
+            "cost": 45,
+            "damage": 3,
+            "rangeCells": 2.5,
+            "cooldownTicks": 20,
+            "costGrowthBp": 14000,
+            "damageGrowthBp": 15000,
+            "adjacencyBonusBp": 2000
+          },
+          {
+            "levels": 3,
+            "rangeGrowthBp": 14000,
+            "targets": 3,
+            "splashCells": 1.5,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "sprayer",
+            "damageType": "support",
+            "cost": 36,
+            "damage": 2,
+            "rangeCells": 2.5,
+            "cooldownTicks": 18,
+            "costGrowthBp": 13000,
+            "damageGrowthBp": 13000,
+            "adjacencyBonusBp": 0,
+            "coating": "wet",
+            "coatingTicks": 60,
+            "preferFreshCoating": true
+          },
+          {
+            "levels": 3,
+            "rangeGrowthBp": 14000,
+            "targets": 2,
+            "splashCells": 1.5,
+            "slowBp": 10000,
+            "slowTicks": 0,
+            "auraBp": 0,
+            "id": "solvent",
+            "damageType": "support",
+            "cost": 40,
+            "damage": 2,
+            "rangeCells": 2.5,
+            "cooldownTicks": 20,
+            "costGrowthBp": 13000,
+            "damageGrowthBp": 13000,
+            "adjacencyBonusBp": 0,
+            "coating": "oil",
+            "coatingTicks": 60,
+            "preferFreshCoating": true
+          }
+        ],
+        "enemies": [
+          {
+            "id": "grunt",
+            "hp": 32,
+            "speedUpt": 64,
+            "budgetCost": 10,
+            "unlockWave": 1,
+            "tags": []
+          },
+          {
+            "id": "swift",
+            "hp": 22,
+            "speedUpt": 120,
+            "budgetCost": 12,
+            "unlockWave": 2,
+            "tags": [
+              "swift"
+            ]
+          },
+          {
+            "id": "armored",
+            "hp": 70,
+            "speedUpt": 52,
+            "budgetCost": 20,
+            "unlockWave": 2,
+            "tags": [
+              "armored"
+            ]
+          },
+          {
+            "id": "swarm",
+            "hp": 20,
+            "speedUpt": 80,
+            "budgetCost": 8,
+            "unlockWave": 5,
+            "tags": [
+              "fragmenting"
+            ]
+          },
+          {
+            "id": "shade",
+            "hp": 35,
+            "speedUpt": 72,
+            "budgetCost": 14,
+            "unlockWave": 9,
+            "tags": [
+              "stealth"
+            ]
+          }
+        ],
+        "composer": {
+          "budgetBase": 180,
+          "growthBp": 11800,
+          "riddleEvery": 4,
+          "spawnIntervalTicks": 16,
+          "hpGrowthBp": 10700,
+          "maxEnemiesPerWave": 18,
+          "openingBudgets": [
+            60,
+            200,
+            250
+          ]
+        },
+        "difficulties": {
+          "easy": {
+            "defenseCostBp": 7000,
+            "description": "Cheaper defense gives you room to learn the drops. Armor arrives on wave 2: read the preview."
+          },
+          "medium": {
+            "defenseCostBp": 10000,
+            "description": "Build an engine before the wave 12–15 wall. Offers steer your plan; they do not lock it."
+          },
+          "hard": {
+            "defenseCostBp": 12500,
+            "description": "Tight build prices. Strong combinations and a carefully preserved kill zone are essential."
+          }
+        },
+        "damageMatrix": {
+          "kinetic": {
+            "armored": 5500,
+            "swift": 12500
+          },
+          "thermal": {
+            "armored": 17500,
+            "swift": 7500
+          },
+          "logic": {
+            "swift": 15000
+          },
+          "burst": {
+            "fragmenting": 17500,
+            "armored": 8000
+          },
+          "chain": {
+            "fragmenting": 15000,
+            "armored": 7500
+          },
+          "scanner": {
+            "stealth": 17500
+          },
+          "support": {}
+        },
+        "stealthDamageBp": 6000,
+        "relicRules": {
+          "everyWaves": 3,
+          "offerCount": 2,
+          "responseBp": 0,
+          "godPowerBp": 14000,
+          "firstOfferWave": 2,
+          "stackBonusBp": 500,
+          "rerollBaseGold": 25,
+          "rerollGrowthBp": 16000,
+          "maxRerolls": 3
+        },
+        "relics": [
+          {
+            "id": "overclock",
+            "name": "Overclock",
+            "description": "Every tower deals 25% more damage. Stacks multiply.",
+            "damageType": "all",
+            "damageBp": 12500,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "cold-front",
+            "name": "Cold front",
+            "description": "Slowed enemies take 40% more damage. Stacks multiply. Build a Frost kill zone.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 14000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "hot-wire",
+            "name": "Hot wire",
+            "description": "Ember damage +40%. Stacks multiply.",
+            "damageType": "thermal",
+            "damageBp": 14000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "conductive",
+            "name": "Conductive",
+            "description": "Arc damage +40%. Stacks multiply.",
+            "damageType": "chain",
+            "damageBp": 14000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 4
+          },
+          {
+            "id": "blood-price",
+            "name": "Blood price",
+            "description": "Pay 3 core permanently. All damage +25%, stacking. You must keep at least 1 core.",
+            "damageType": "all",
+            "damageBp": 12500,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "sacrificeLives": 3,
+            "offerWeight": 4
+          },
+          {
+            "id": "last-stand",
+            "name": "Last stand",
+            "description": "At 4 core or less: all damage ×2.5 per stack. Above 4 core this does nothing. A dangerous commitment.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "lowLifeThreshold": 4,
+            "lowLifeDamageBp": 25000,
+            "offerWeight": 1
+          },
+          {
+            "id": "venom",
+            "name": "Venom rounds",
+            "description": "Hits add poison worth 45% of hit damage over 3s, up to 8 doses. Hits refresh duration; stronger hits raise the dose ceiling. Copies strengthen doses.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 2,
+            "poisonDamageBp": 4500,
+            "poisonTicks": 60
+          },
+          {
+            "id": "black-ice",
+            "name": "Black ice",
+            "description": "Every hit slows to 85% speed for 1.5s. Copies multiply speed and add duration; floor 25%. Refreshes the strongest slow. Enables Cold Front.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 2,
+            "hitSlowBp": 8500,
+            "hitSlowTicks": 30
+          },
+          {
+            "id": "mutiny",
+            "name": "Mutiny",
+            "description": "Hits confuse for 4s. Every 2s the enemy strikes another nearby enemy for 12% of its own max HP. Copies add damage and duration. No self-hits.",
+            "damageType": "all",
+            "damageBp": 10000,
+            "slowDamageBp": 10000,
+            "interestBp": 0,
+            "offerWeight": 1,
+            "confusionDamageBp": 1200,
+            "confusionTicks": 80
+          }
+        ],
+        "effectRules": {
+          "minSlowBp": 2500,
+          "poisonStackCap": 8,
+          "confusionIntervalTicks": 40,
+          "confusionRadiusFp": 1536,
+          "wetLightningBp": 15000,
+          "wetSlowBp": 7500,
+          "oilHitBp": 17500,
+          "oilBurnBp": 5000,
+          "oilBurnTicks": 60
+        }
+      }
+    },
+    "configHashes": [
+      {
+        "variant": "raid",
+        "difficulty": "easy",
+        "hash": 1878288051
+      },
+      {
+        "variant": "raid",
+        "difficulty": "medium",
+        "hash": 3441335765
+      },
+      {
+        "variant": "raid",
+        "difficulty": "hard",
+        "hash": 1591373726
+      },
+      {
+        "variant": "compound",
+        "difficulty": "easy",
+        "hash": 3747687293
+      },
+      {
+        "variant": "compound",
+        "difficulty": "medium",
+        "hash": 907486787
+      },
+      {
+        "variant": "compound",
+        "difficulty": "hard",
+        "hash": 1442839026
+      },
+      {
+        "variant": "pact",
+        "difficulty": "easy",
+        "hash": 451489219
+      },
+      {
+        "variant": "pact",
+        "difficulty": "medium",
+        "hash": 3674988221
+      },
+      {
+        "variant": "pact",
+        "difficulty": "hard",
+        "hash": 3412739628
+      }
+    ],
+    "controllerSource": "/** Experiment-local low-knowledge controller. No runtime fingerprint changes,\n * future RNG inspection, combat forecast, virtual cash, raids or rerolls. */\nimport { SCALE, canBuild, composeWave, damageMultiplier, pathFromEntry, type Command, type GameData, type State } from \"../../packages/sim/src/index.ts\";\nimport type { Policy } from \"../../tools/balance/src/policy.ts\";\nimport { evaluateOffers, raiderPolicy } from \"../../tools/balance/src/policies/raider.ts\";\nimport { assessBuildRoute, preserveKillZone } from \"../../tools/balance/src/policies/path-guard.ts\";\n\nexport function learnerOffers(data:GameData,s:State) {\n  return evaluateOffers(data,s,\"synergy-rookie\").map(offer=>{\n    const r=data.relics.find(r=>r.id===offer.id)!;\n    // Knows the plainly stated slow→damage connection, but not poison doses,\n    // confusion economics, coating combinations or compound forecasts.\n    const cold=r.slowDamageBp>10000?Math.log(r.slowDamageBp/10000)*(s.towers.some(t=>t.type===\"frost\")?0.65:0.3):0;\n    return {...offer,score:offer.score+cold,reason:offer.reason+(cold?\"; understands basic Frost activation\":\"\")};\n  }).sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id));\n}\n\n/** Public current/next-wave composition only; no numeric outcome simulation. */\nexport function learnerTarget(data:GameData,s:State):string|undefined {\n  if(s.towers.length<3)return;\n  if(s.relics.some(id=>data.relics.find(r=>r.id===id)!.slowDamageBp>10000)&&!s.towers.some(t=>t.type===\"frost\"))return \"frost\";\n  const preview=composeWave(data,s.seed,Math.min(data.economy.maxWaves,s.wave+(s.inWave?0:1)),s.raided);\n  const choices=data.towers.filter(t=>!t.coating&&t.damageType!==\"kinetic\").map(t=>{\n    const copies=s.relics.filter(id=>{const r=data.relics.find(r=>r.id===id)!;return r.damageType===t.damageType&&r.damageBp>10000;}).length;\n    const invested=s.towers.filter(x=>x.type===t.id).reduce((n,x)=>n+x.spent,0);\n    const matchup=preview.reduce((n,e)=>n+damageMultiplier(data,t,data.enemyById.get(e.type)!),0)/Math.max(1,preview.length)/10000;\n    // One matching purchase promptly, then a bounded share of future spending.\n    // Two copies justify a larger commitment, not permanent first-card lock-in.\n    const target=Math.max(t.cost,Math.min(0.6,0.25+copies*0.1)*s.stats.goldSpent);\n    return {id:t.id,copies,invested,target,score:copies*matchup*(1-invested/Math.max(1,target))};\n  }).filter(x=>x.copies>0&&x.invested<x.target).sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id));\n  return choices[0]?.id;\n}\n\nfunction safeBuild(data:GameData,s:State,id:string):Command|undefined {\n  const type=data.towerById.get(id);if(!type||s.gold<type.cost)return;\n  const path=pathFromEntry(s.grid,s.dist),r2=(type.ladder[0]!.rangeFp/SCALE)**2;\n  const distance=(a:number,b:number)=>(a%s.grid.width-b%s.grid.width)**2+(Math.floor(a/s.grid.width)-Math.floor(b/s.grid.width))**2;\n  const ranked=Array.from({length:s.blocked.length},(_,cell)=>({cell,coverage:s.blocked[cell]?0:path.filter(p=>distance(cell,p)<=r2).length}))\n    .filter(c=>c.coverage>0).sort((a,b)=>b.coverage-a.coverage||a.cell-b.cell);\n  for(const {cell} of ranked) {\n    if(!canBuild(s,cell).ok)continue;\n    const cmd={kind:\"build\" as const,cell,type:id};\n    if(assessBuildRoute(data,s,cmd).safe)return cmd;\n  }\n}\n\nexport function learnerPolicy():Policy {\n  const base=raiderPolicy(\"synergy-rookie\");let priorLeaks=0;\n  return {name:\"learner-v1\",decide(data,s,rng) {\n    if(s.tick===0)priorLeaks=0;\n    if(s.tick%40)return [];\n    if(s.relicOffers.length){const pick=learnerOffers(data,s)[0];return pick?[{kind:\"pickRelic\",id:pick.id}]:[];}\n    const leaked=s.stats.leaks>priorLeaks;priorLeaks=s.stats.leaks;\n    const emergency=s.enemies.some(e=>e.hp>0&&s.dist[e.cell]!<=4)||(leaked&&s.lives<=3);\n    const target=learnerTarget(data,s);\n    if(target&&!emergency) {\n      const command=safeBuild(data,s,target);\n      if(command)return [command];\n      if(s.gold<(data.towerById.get(target)?.cost??0)) {\n        // Save actual income, but do not deadlock between waves waiting for it.\n        return !s.inWave&&s.wave>0?[{kind:\"callWave\"}]:[];\n      }\n    }\n    // Public near-core emergency releases saving; only affordable, legal actions.\n    return preserveKillZone(data,s,base.decide(data,s,rng));\n  }};\n}\n"
+  },
+  "controllerHash": 2963884217,
+  "reports": [
+    {
+      "variant": "raid",
+      "difficulty": "easy",
+      "controllerHash": 2963884217,
+      "policy": "learner-v1",
+      "runs": 40,
+      "winRate": 0.95,
+      "wavesP5": 17,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.5,
+      "minutesP5": 5.6,
+      "minutesP95": 7.6,
+      "winRateCI95": [
+        0.834958291820748,
+        0.9861796228538989
+      ],
+      "meanInterestShare": 0.013258962136371424,
+      "wins": 38,
+      "rejected": 0,
+      "allReplaysVerified": true,
+      "failedClearP50": 15,
+      "failureWaveHistogram": {
+        "16": 1,
+        "18": 1
+      },
+      "early": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        }
+      ],
+      "activation": {
+        "typedOrColdPicks": 147,
+        "picksWithoutMatchingInvestment": 75,
+        "converted": 74,
+        "notConverted": 1,
+        "delayTicksP50": 160,
+        "delayTicksP95": 320,
+        "withinNextTwoWaves": 74
+      },
+      "failureClearQuantiles": {
+        "p5": 15,
+        "p50": 15,
+        "p95": 17
+      }
+    },
+    {
+      "variant": "raid",
+      "difficulty": "medium",
+      "controllerHash": 2963884217,
+      "policy": "learner-v1",
+      "runs": 40,
+      "winRate": 0.675,
+      "wavesP5": 7,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.9,
+      "minutesP5": 3.7,
+      "minutesP95": 8.2,
+      "winRateCI95": [
+        0.52017458088898,
+        0.7991568303733828
+      ],
+      "meanInterestShare": 0.014965638910894719,
+      "wins": 27,
+      "rejected": 0,
+      "allReplaysVerified": true,
+      "failedClearP50": 14,
+      "failureWaveHistogram": {
+        "8": 2,
+        "12": 2,
+        "13": 1,
+        "14": 1,
+        "15": 2,
+        "16": 2,
+        "17": 2,
+        "18": 1
+      },
+      "early": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "runsLeaking": 20,
+          "totalLeaks": 38
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "runsLeaking": 1,
+          "totalLeaks": 1
+        }
+      ],
+      "activation": {
+        "typedOrColdPicks": 140,
+        "picksWithoutMatchingInvestment": 74,
+        "converted": 73,
+        "notConverted": 1,
+        "delayTicksP50": 280,
+        "delayTicksP95": 440,
+        "withinNextTwoWaves": 73
+      },
+      "failureClearQuantiles": {
+        "p5": 7,
+        "p50": 14,
+        "p95": 17
+      }
+    },
+    {
+      "variant": "raid",
+      "difficulty": "hard",
+      "controllerHash": 2963884217,
+      "policy": "learner-v1",
+      "runs": 40,
+      "winRate": 0.3,
+      "wavesP5": 2,
+      "wavesP50": 12,
+      "wavesP95": 18,
+      "minutesP50": 5.4,
+      "minutesP5": 1.2,
+      "minutesP95": 8.3,
+      "winRateCI95": [
+        0.18074670915695296,
+        0.454303106543204
+      ],
+      "meanInterestShare": 0.01845365671617589,
+      "wins": 12,
+      "rejected": 0,
+      "allReplaysVerified": true,
+      "failedClearP50": 9,
+      "failureWaveHistogram": {
+        "3": 3,
+        "4": 5,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 3,
+        "12": 2,
+        "13": 1,
+        "14": 2,
+        "16": 2,
+        "17": 4
+      },
+      "early": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "runsLeaking": 36,
+          "totalLeaks": 129
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "runsLeaking": 18,
+          "totalLeaks": 60
+        }
+      ],
+      "activation": {
+        "typedOrColdPicks": 93,
+        "picksWithoutMatchingInvestment": 57,
+        "converted": 49,
+        "notConverted": 8,
+        "delayTicksP50": 280,
+        "delayTicksP95": 920,
+        "withinNextTwoWaves": 48
+      },
+      "failureClearQuantiles": {
+        "p5": 2,
+        "p50": 9,
+        "p95": 16
+      }
+    },
+    {
+      "variant": "compound",
+      "difficulty": "easy",
+      "controllerHash": 2963884217,
+      "policy": "learner-v1",
+      "runs": 40,
+      "winRate": 0.85,
+      "wavesP5": 15,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.8,
+      "minutesP5": 6.1,
+      "minutesP95": 7.8,
+      "winRateCI95": [
+        0.7092737396097997,
+        0.9293890829149256
+      ],
+      "meanInterestShare": 0.021204097433893343,
+      "wins": 34,
+      "rejected": 0,
+      "allReplaysVerified": true,
+      "failedClearP50": 15,
+      "failureWaveHistogram": {
+        "16": 3,
+        "17": 3
+      },
+      "early": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        }
+      ],
+      "activation": {
+        "typedOrColdPicks": 137,
+        "picksWithoutMatchingInvestment": 83,
+        "converted": 83,
+        "notConverted": 0,
+        "delayTicksP50": 160,
+        "delayTicksP95": 320,
+        "withinNextTwoWaves": 83
+      },
+      "failureClearQuantiles": {
+        "p5": 15,
+        "p50": 15,
+        "p95": 16
+      }
+    },
+    {
+      "variant": "compound",
+      "difficulty": "medium",
+      "controllerHash": 2963884217,
+      "policy": "learner-v1",
+      "runs": 40,
+      "winRate": 0.3,
+      "wavesP5": 11,
+      "wavesP50": 16,
+      "wavesP95": 18,
+      "minutesP50": 7.1,
+      "minutesP5": 5.2,
+      "minutesP95": 8.5,
+      "winRateCI95": [
+        0.18074670915695296,
+        0.454303106543204
+      ],
+      "meanInterestShare": 0.02443827262589115,
+      "wins": 12,
+      "rejected": 0,
+      "allReplaysVerified": true,
+      "failedClearP50": 15,
+      "failureWaveHistogram": {
+        "8": 1,
+        "12": 1,
+        "13": 1,
+        "14": 2,
+        "15": 2,
+        "16": 8,
+        "17": 10,
+        "18": 3
+      },
+      "early": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "runsLeaking": 20,
+          "totalLeaks": 38
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        }
+      ],
+      "activation": {
+        "typedOrColdPicks": 126,
+        "picksWithoutMatchingInvestment": 82,
+        "converted": 81,
+        "notConverted": 1,
+        "delayTicksP50": 280,
+        "delayTicksP95": 440,
+        "withinNextTwoWaves": 81
+      },
+      "failureClearQuantiles": {
+        "p5": 11,
+        "p50": 15,
+        "p95": 17
+      }
+    },
+    {
+      "variant": "compound",
+      "difficulty": "hard",
+      "controllerHash": 2963884217,
+      "policy": "learner-v1",
+      "runs": 40,
+      "winRate": 0.05,
+      "wavesP5": 3,
+      "wavesP50": 12,
+      "wavesP95": 17,
+      "minutesP50": 5.5,
+      "minutesP5": 1.5,
+      "minutesP95": 8.5,
+      "winRateCI95": [
+        0.013820377146101098,
+        0.165041708179252
+      ],
+      "meanInterestShare": 0.03025359975901969,
+      "wins": 2,
+      "rejected": 0,
+      "allReplaysVerified": true,
+      "failedClearP50": 12,
+      "failureWaveHistogram": {
+        "4": 7,
+        "8": 1,
+        "10": 1,
+        "11": 3,
+        "12": 3,
+        "13": 6,
+        "14": 4,
+        "15": 3,
+        "16": 4,
+        "17": 3,
+        "18": 3
+      },
+      "early": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "runsLeaking": 36,
+          "totalLeaks": 125
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "runsLeaking": 10,
+          "totalLeaks": 25
+        }
+      ],
+      "activation": {
+        "typedOrColdPicks": 93,
+        "picksWithoutMatchingInvestment": 66,
+        "converted": 59,
+        "notConverted": 7,
+        "delayTicksP50": 320,
+        "delayTicksP95": 640,
+        "withinNextTwoWaves": 59
+      },
+      "failureClearQuantiles": {
+        "p5": 3,
+        "p50": 12,
+        "p95": 17
+      }
+    },
+    {
+      "variant": "pact",
+      "difficulty": "easy",
+      "controllerHash": 2963884217,
+      "policy": "learner-v1",
+      "runs": 40,
+      "winRate": 0.825,
+      "wavesP5": 15,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.8,
+      "minutesP5": 5.8,
+      "minutesP95": 8,
+      "winRateCI95": [
+        0.6804970794560755,
+        0.9125469700311694
+      ],
+      "meanInterestShare": 0.011174513130786998,
+      "wins": 33,
+      "rejected": 0,
+      "allReplaysVerified": true,
+      "failedClearP50": 16,
+      "failureWaveHistogram": {
+        "16": 3,
+        "17": 2,
+        "18": 2
+      },
+      "early": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        }
+      ],
+      "activation": {
+        "typedOrColdPicks": 106,
+        "picksWithoutMatchingInvestment": 51,
+        "converted": 51,
+        "notConverted": 0,
+        "delayTicksP50": 160,
+        "delayTicksP95": 320,
+        "withinNextTwoWaves": 51
+      },
+      "failureClearQuantiles": {
+        "p5": 15,
+        "p50": 16,
+        "p95": 17
+      }
+    },
+    {
+      "variant": "pact",
+      "difficulty": "medium",
+      "controllerHash": 2963884217,
+      "policy": "learner-v1",
+      "runs": 40,
+      "winRate": 0.35,
+      "wavesP5": 7,
+      "wavesP50": 16,
+      "wavesP95": 18,
+      "minutesP50": 7.1,
+      "minutesP5": 2.9,
+      "minutesP95": 8.5,
+      "winRateCI95": [
+        0.2213433317104915,
+        0.5049440300646263
+      ],
+      "meanInterestShare": 0.012241642221111806,
+      "wins": 14,
+      "rejected": 0,
+      "allReplaysVerified": true,
+      "failedClearP50": 15,
+      "failureWaveHistogram": {
+        "8": 2,
+        "10": 1,
+        "13": 1,
+        "14": 1,
+        "15": 2,
+        "16": 10,
+        "17": 5,
+        "18": 4
+      },
+      "early": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "runsLeaking": 20,
+          "totalLeaks": 38
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        }
+      ],
+      "activation": {
+        "typedOrColdPicks": 98,
+        "picksWithoutMatchingInvestment": 56,
+        "converted": 54,
+        "notConverted": 2,
+        "delayTicksP50": 280,
+        "delayTicksP95": 440,
+        "withinNextTwoWaves": 54
+      },
+      "failureClearQuantiles": {
+        "p5": 7,
+        "p50": 15,
+        "p95": 17
+      }
+    },
+    {
+      "variant": "pact",
+      "difficulty": "hard",
+      "controllerHash": 2963884217,
+      "policy": "learner-v1",
+      "runs": 40,
+      "winRate": 0.075,
+      "wavesP5": 2,
+      "wavesP50": 12,
+      "wavesP95": 18,
+      "minutesP50": 5.1,
+      "minutesP5": 1.2,
+      "minutesP95": 7.4,
+      "winRateCI95": [
+        0.025835556771858226,
+        0.19864530159097524
+      ],
+      "meanInterestShare": 0.01529136691168996,
+      "wins": 3,
+      "rejected": 0,
+      "allReplaysVerified": true,
+      "failedClearP50": 12,
+      "failureWaveHistogram": {
+        "3": 3,
+        "4": 5,
+        "7": 3,
+        "8": 1,
+        "9": 3,
+        "10": 1,
+        "11": 2,
+        "13": 5,
+        "14": 5,
+        "15": 5,
+        "16": 2,
+        "17": 1,
+        "18": 1
+      },
+      "early": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "runsLeaking": 0,
+          "totalLeaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "runsLeaking": 36,
+          "totalLeaks": 129
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "runsLeaking": 12,
+          "totalLeaks": 45
+        }
+      ],
+      "activation": {
+        "typedOrColdPicks": 70,
+        "picksWithoutMatchingInvestment": 48,
+        "converted": 43,
+        "notConverted": 5,
+        "delayTicksP50": 360,
+        "delayTicksP95": 600,
+        "withinNextTwoWaves": 43
+      },
+      "failureClearQuantiles": {
+        "p5": 2,
+        "p50": 12,
+        "p95": 16
+      }
+    }
+  ],
+  "totalRuns": 360,
+  "caveats": [
+    "Fresh learner-v1 validation, separate from old apprentice diagnostic.",
+    "No game/controller retuning during this batch; profile is not calibrated human skill.",
+    "Activation includes upgrades and builds; already-active drops are not counted as missing activation.",
+    "No simulated emotions: decision quality requires trace inspection alongside aggregate statistics."
+  ]
+}

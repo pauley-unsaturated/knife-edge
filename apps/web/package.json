@@ -1,0 +1,5 @@
+{
+  "name": "@knife-edge/web", "private": true, "type": "module",
+  "scripts": { "dev": "vite --host 127.0.0.1", "build": "vite build", "preview": "vite preview --host 127.0.0.1" },
+  "dependencies": { "@knife-edge/sim": "workspace:*", "@knife-edge/render-phaser": "workspace:*", "vite": "8.3.0" }
+}

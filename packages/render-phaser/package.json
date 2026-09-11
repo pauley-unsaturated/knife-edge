@@ -1,0 +1,5 @@
+{
+  "name": "@knife-edge/render-phaser", "private": true, "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": { "@knife-edge/sim": "workspace:*", "phaser": "4.2.1" }
+}

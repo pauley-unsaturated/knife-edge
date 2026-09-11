@@ -1,0 +1,2460 @@
+{
+  "plannedRuns": 1512,
+  "runs": 1512,
+  "replayFiles": 1512,
+  "allReplaysVerified": true,
+  "rejectedCommands": 0,
+  "timeouts": 0,
+  "allSourcesUnchanged": true,
+  "allMatchedBoardsVerified": true,
+  "fingerprints": {
+    "configs": {
+      "raid": "82097f68d36889be6dee04975eee7e3ea3953f20f712b6c68e545553eadb3ed4",
+      "compound": "3fb3954d3cca26844cd1003f7d5dd9bc8e64e78c00fa3e08978abf1f9a0a0d8a",
+      "pact": "9d3322011cbb96a859cf1b6496c394430148fe32ad06bc0455fc653de0b76f0e"
+    },
+    "sim": "cbd54ccac6c68ac4f32def70dd37683919a578cc4502c514a0499a95d88222d6",
+    "policies": "212d4f793052df0f7c87fc2985d6f2d0013cea7e0093417473a100378113d4d4",
+    "helpers": "37631defc68e1c028694f05e82a82484d721133fd20a077097e09c0321b69642",
+    "simSources": {
+      "packages/sim/src/combos.ts": "09ec30d4d30d1b437e85a214568940d04c9e4de1903b16510725e7be2f1016d6",
+      "packages/sim/src/composer.ts": "6d1b18ded466706e3a41f70d6a7c55d020328b5c5b62c3e491086082005f07ce",
+      "packages/sim/src/data.ts": "eaba33784a590cdf178b80c5c785f093ca1ee091b846016917717166e4b1518a",
+      "packages/sim/src/drops.ts": "99d9fcf9f51a12dab3a7d49c1c3dcd10abe10ca3693aa8ae98716b3092cafd36",
+      "packages/sim/src/effects.ts": "ffa2341a496a7a78e13bb68def729849f4f0ba7ad8816946000a92434a5438c5",
+      "packages/sim/src/fixed.ts": "95ebbba64bc832c0f3b16f2dcf6834d287cfb45bfc2886a2b54314b656391128",
+      "packages/sim/src/grid.ts": "180da95508fb988da6cdc1af95f38d162b1adce9fdeeb70bbf8f8e3d032ef707",
+      "packages/sim/src/index.ts": "0447ef1feca81780eebe001e60b215ea80dcdc2c9fb14d7a7b1771d59876b703",
+      "packages/sim/src/replay.ts": "16d2baf32f2e51c8c8c20c3785b6a83c06eaf8f5f6f664f7208d8e6be8517c74",
+      "packages/sim/src/rng.ts": "50775101b9ad2f271e624db01a5c8353292aee8fda35dac3d04711327fa8fa75",
+      "packages/sim/src/world.ts": "7fca3bd93aa242ad695802895775f05991425485e8c7266e057c3a0fcb48b3af"
+    },
+    "policySources": {
+      "tools/balance/src/policies/engineer.ts": "522ebae187c5c2e3cdeeb339ea04cb14688e2d029a5b6480189de632f14b8abe",
+      "tools/balance/src/policies/greedy.ts": "2f5f53e31ffede21341d8e3172df2d95964b18a4b19630ebe53b0cdcb78d341b",
+      "tools/balance/src/policies/index.ts": "64e91f10544766974c5a8cf1967a549b41287fba715fbb87c2cf761b4440c6b9",
+      "tools/balance/src/policies/learning.ts": "25b00c8424b2383f9b6219336067436b5c354510a4136d9f76726b11bc17418a",
+      "tools/balance/src/policies/path-guard.ts": "79d5f866fb01cfd06836ec12869587ab485fa8395bc85dc1f6973b257fdc70b1",
+      "tools/balance/src/policies/profile.ts": "8711e438c482b83c42a8f8d1aa02e10e9cad69c2a5f2d6d1940a68baec9a7b1b",
+      "tools/balance/src/policies/raider.ts": "7da4f317951c368087edaba7b7b757bab73ab92530653f4c2a62829f176c8f5b",
+      "tools/balance/src/policies/random.ts": "1810876883ab909a1789a052065cf203edd2e94690c6e2c777c44e2e785aba09"
+    },
+    "helperSources": {
+      "tools/balance/src/engine-validation.ts": "9d9eaca775d1e1b7f55938df7cdd79c0778e355c6ee366d40b2d0b0fd49be9cb",
+      "tools/balance/src/exploration.ts": "cfbe4455d485fb1985271a267715fa2f1512b9c93c901fcf0b971fd5b2b84718",
+      "tools/balance/src/runner.ts": "ed08fc5d9ec60c0b41667647d66266ecf761865dee96383265867c5a06823f44",
+      "tools/balance/src/policy.ts": "325206821895d126ea2794c91bfbb323fd3e1f5bb9b68dfec0dfdd3d0f4a765b",
+      "experiments/0004-raid-heat/validate-engines.ts": "31a1bea6bbe341bfa01b3cd7cf2af8c3a1234cbb4fe1a924a105ac22192877d1"
+    }
+  },
+  "summaryFiles": [
+    "validation-heldout-v4-raid/summary.json",
+    "validation-heldout-v4-compound/summary.json",
+    "validation-heldout-v4-pact/summary.json",
+    "validation-heldout-v4-prepared/summary.json"
+  ],
+  "reports": [
+    {
+      "variant": "raid",
+      "difficulty": "easy",
+      "group": "matched-seeds",
+      "profile": "engineer-apprentice",
+      "policy": "engineer-apprentice",
+      "runs": 40,
+      "winRate": 0.425,
+      "wavesP5": 11,
+      "wavesP50": 16,
+      "wavesP95": 18,
+      "minutesP50": 6.4,
+      "minutesP5": 4.7,
+      "minutesP95": 8.2,
+      "winRateCI95": [
+        0.28509168524815875,
+        0.5780519956394001
+      ],
+      "meanInterestShare": 0.011743982391594847,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 18,
+      "upgrades": 81,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/raid/easy/engineer-apprentice.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "easy",
+      "group": "matched-seeds",
+      "profile": "engineer-deliberate",
+      "policy": "engineer-deliberate",
+      "runs": 40,
+      "winRate": 1,
+      "wavesP5": 18,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.5,
+      "minutesP5": 5.4,
+      "minutesP95": 8.7,
+      "winRateCI95": [
+        0.9123754607496077,
+        1
+      ],
+      "meanInterestShare": 0.01568047618005213,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 34,
+      "supportBuilds": 108,
+      "upgradedRuns": 40,
+      "upgrades": 313,
+      "rerollRuns": 2,
+      "rerolls": 2,
+      "rerollFees": 50,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/raid/easy/engineer-deliberate.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "easy",
+      "group": "matched-seeds",
+      "profile": "engineer",
+      "policy": "engineer",
+      "runs": 40,
+      "winRate": 0.975,
+      "wavesP5": 18,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6,
+      "minutesP5": 5,
+      "minutesP95": 7.6,
+      "winRateCI95": [
+        0.8711834051199223,
+        0.9955732825922052
+      ],
+      "meanInterestShare": 0.012983274824127833,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 1,
+          "leaks": 1
+        }
+      ],
+      "supportRuns": 33,
+      "supportBuilds": 119,
+      "upgradedRuns": 36,
+      "upgrades": 234,
+      "rerollRuns": 2,
+      "rerolls": 2,
+      "rerollFees": 50,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/raid/easy/engineer.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer-apprentice",
+      "policy": "engineer-apprentice",
+      "runs": 40,
+      "winRate": 0.1,
+      "wavesP5": 3,
+      "wavesP50": 11,
+      "wavesP95": 18,
+      "minutesP50": 5.4,
+      "minutesP5": 1.7,
+      "minutesP95": 8.1,
+      "winRateCI95": [
+        0.03957888759557486,
+        0.23052074380473897
+      ],
+      "meanInterestShare": 0.010894927842936771,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 16,
+          "leaks": 41
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 5,
+          "leaks": 9
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 2,
+      "upgrades": 2,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/raid/medium/engineer-apprentice.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer-deliberate",
+      "policy": "engineer-deliberate",
+      "runs": 40,
+      "winRate": 0.725,
+      "wavesP5": 3,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 7,
+      "minutesP5": 1.9,
+      "minutesP95": 8.9,
+      "winRateCI95": [
+        0.5716474916687543,
+        0.8389214656685692
+      ],
+      "meanInterestShare": 0.016880552582712805,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 17,
+          "leaks": 48
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 8,
+          "leaks": 19
+        }
+      ],
+      "supportRuns": 27,
+      "supportBuilds": 71,
+      "upgradedRuns": 32,
+      "upgrades": 108,
+      "rerollRuns": 2,
+      "rerolls": 2,
+      "rerollFees": 50,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/raid/medium/engineer-deliberate.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer",
+      "policy": "engineer",
+      "runs": 40,
+      "winRate": 0.825,
+      "wavesP5": 13,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.1,
+      "minutesP5": 5,
+      "minutesP95": 7.9,
+      "winRateCI95": [
+        0.6804970794560755,
+        0.9125469700311694
+      ],
+      "meanInterestShare": 0.013680378869518357,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 15,
+          "leaks": 40
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 3,
+          "leaks": 9
+        }
+      ],
+      "supportRuns": 30,
+      "supportBuilds": 92,
+      "upgradedRuns": 26,
+      "upgrades": 72,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/raid/medium/engineer.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "hard",
+      "group": "matched-seeds",
+      "profile": "engineer-apprentice",
+      "policy": "engineer-apprentice",
+      "runs": 40,
+      "winRate": 0.025,
+      "wavesP5": 3,
+      "wavesP50": 8,
+      "wavesP95": 14,
+      "minutesP50": 3.6,
+      "minutesP5": 1.4,
+      "minutesP95": 6.5,
+      "winRateCI95": [
+        0.0044267174077949195,
+        0.1288165948800778
+      ],
+      "meanInterestShare": 0.015578545405896153,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 32,
+          "leaks": 116
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 39,
+          "leakRuns": 23,
+          "leaks": 76
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 0,
+      "upgrades": 0,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/raid/hard/engineer-apprentice.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "hard",
+      "group": "matched-seeds",
+      "profile": "engineer-deliberate",
+      "policy": "engineer-deliberate",
+      "runs": 40,
+      "winRate": 0.3,
+      "wavesP5": 2,
+      "wavesP50": 13,
+      "wavesP95": 18,
+      "minutesP50": 5.9,
+      "minutesP5": 1.2,
+      "minutesP95": 8.9,
+      "winRateCI95": [
+        0.18074670915695296,
+        0.454303106543204
+      ],
+      "meanInterestShare": 0.019924698588697706,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 35,
+          "leaks": 151
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 35,
+          "leakRuns": 17,
+          "leaks": 66
+        }
+      ],
+      "supportRuns": 17,
+      "supportBuilds": 36,
+      "upgradedRuns": 19,
+      "upgrades": 50,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/raid/hard/engineer-deliberate.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "hard",
+      "group": "matched-seeds",
+      "profile": "engineer",
+      "policy": "engineer",
+      "runs": 40,
+      "winRate": 0.4,
+      "wavesP5": 2,
+      "wavesP50": 14,
+      "wavesP95": 18,
+      "minutesP50": 5.7,
+      "minutesP5": 1.1,
+      "minutesP95": 7.9,
+      "winRateCI95": [
+        0.2634811061240136,
+        0.5540438017260649
+      ],
+      "meanInterestShare": 0.01524999331622393,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 29,
+          "leaks": 122
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 37,
+          "leakRuns": 13,
+          "leaks": 50
+        }
+      ],
+      "supportRuns": 20,
+      "supportBuilds": 46,
+      "upgradedRuns": 14,
+      "upgrades": 30,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/raid/hard/engineer.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "medium",
+      "group": "neutral-controls",
+      "profile": "force-arc",
+      "policy": "force-arc",
+      "runs": 40,
+      "winRate": 0,
+      "wavesP5": 6,
+      "wavesP50": 10,
+      "wavesP95": 12,
+      "minutesP50": 4.1,
+      "minutesP5": 2.3,
+      "minutesP95": 5.7,
+      "winRateCI95": [
+        0,
+        0.08762453925039232
+      ],
+      "meanInterestShare": 0.017390388654578582,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 15,
+          "leaks": 25
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 6,
+          "leaks": 9
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 0,
+      "upgrades": 0,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "neutral-controls/raid/medium/force-arc.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "medium",
+      "group": "neutral-controls",
+      "profile": "force-ember",
+      "policy": "force-ember",
+      "runs": 40,
+      "winRate": 0,
+      "wavesP5": 7,
+      "wavesP50": 9,
+      "wavesP95": 13,
+      "minutesP50": 3.4,
+      "minutesP5": 2.4,
+      "minutesP95": 6.5,
+      "winRateCI95": [
+        0,
+        0.08762453925039232
+      ],
+      "meanInterestShare": 0.018462636589501178,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 7,
+      "upgrades": 23,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "neutral-controls/raid/medium/force-ember.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-raid"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "easy",
+      "group": "matched-seeds",
+      "profile": "engineer-apprentice",
+      "policy": "engineer-apprentice",
+      "runs": 40,
+      "winRate": 0.475,
+      "wavesP5": 14,
+      "wavesP50": 16,
+      "wavesP95": 18,
+      "minutesP50": 6.7,
+      "minutesP5": 5.4,
+      "minutesP95": 8.2,
+      "winRateCI95": [
+        0.32935229550181694,
+        0.6250289314607027
+      ],
+      "meanInterestShare": 0.019369786136068604,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 21,
+      "upgrades": 102,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/compound/easy/engineer-apprentice.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "easy",
+      "group": "matched-seeds",
+      "profile": "engineer-deliberate",
+      "policy": "engineer-deliberate",
+      "runs": 40,
+      "winRate": 0.975,
+      "wavesP5": 18,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.9,
+      "minutesP5": 5.3,
+      "minutesP95": 8.8,
+      "winRateCI95": [
+        0.8711834051199223,
+        0.9955732825922052
+      ],
+      "meanInterestShare": 0.028952439637143102,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 24,
+      "supportBuilds": 69,
+      "upgradedRuns": 40,
+      "upgrades": 357,
+      "rerollRuns": 1,
+      "rerolls": 1,
+      "rerollFees": 25,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/compound/easy/engineer-deliberate.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "easy",
+      "group": "matched-seeds",
+      "profile": "engineer",
+      "policy": "engineer",
+      "runs": 40,
+      "winRate": 0.975,
+      "wavesP5": 18,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.4,
+      "minutesP5": 4.9,
+      "minutesP95": 7.7,
+      "winRateCI95": [
+        0.8711834051199223,
+        0.9955732825922052
+      ],
+      "meanInterestShare": 0.023660400300709712,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 20,
+      "supportBuilds": 65,
+      "upgradedRuns": 39,
+      "upgrades": 247,
+      "rerollRuns": 1,
+      "rerolls": 1,
+      "rerollFees": 25,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/compound/easy/engineer.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer-apprentice",
+      "policy": "engineer-apprentice",
+      "runs": 40,
+      "winRate": 0.05,
+      "wavesP5": 4,
+      "wavesP50": 12,
+      "wavesP95": 16,
+      "minutesP50": 5.4,
+      "minutesP5": 2,
+      "minutesP95": 7,
+      "winRateCI95": [
+        0.013820377146101098,
+        0.165041708179252
+      ],
+      "meanInterestShare": 0.019042629163249527,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 16,
+          "leaks": 41
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 2,
+          "leaks": 3
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 0,
+      "upgrades": 0,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/compound/medium/engineer-apprentice.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer-deliberate",
+      "policy": "engineer-deliberate",
+      "runs": 40,
+      "winRate": 0.725,
+      "wavesP5": 13,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 7.4,
+      "minutesP5": 5.5,
+      "minutesP95": 9.6,
+      "winRateCI95": [
+        0.5716474916687543,
+        0.8389214656685692
+      ],
+      "meanInterestShare": 0.02888658311550743,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 14,
+          "leaks": 40
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 4,
+          "leaks": 7
+        }
+      ],
+      "supportRuns": 21,
+      "supportBuilds": 48,
+      "upgradedRuns": 34,
+      "upgrades": 155,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/compound/medium/engineer-deliberate.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer",
+      "policy": "engineer",
+      "runs": 40,
+      "winRate": 0.775,
+      "wavesP5": 13,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.7,
+      "minutesP5": 5.6,
+      "minutesP95": 8.9,
+      "winRateCI95": [
+        0.6249660359590695,
+        0.8768404674532148
+      ],
+      "meanInterestShare": 0.025016696360337966,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 15,
+          "leaks": 40
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 2,
+          "leaks": 4
+        }
+      ],
+      "supportRuns": 24,
+      "supportBuilds": 70,
+      "upgradedRuns": 30,
+      "upgrades": 90,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/compound/medium/engineer.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "hard",
+      "group": "matched-seeds",
+      "profile": "engineer-apprentice",
+      "policy": "engineer-apprentice",
+      "runs": 40,
+      "winRate": 0,
+      "wavesP5": 3,
+      "wavesP50": 9,
+      "wavesP95": 13,
+      "minutesP50": 3.9,
+      "minutesP5": 1.5,
+      "minutesP95": 6.7,
+      "winRateCI95": [
+        0,
+        0.08762453925039232
+      ],
+      "meanInterestShare": 0.02967998776299997,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 32,
+          "leaks": 116
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 21,
+          "leaks": 70
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 0,
+      "upgrades": 0,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/compound/hard/engineer-apprentice.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "hard",
+      "group": "matched-seeds",
+      "profile": "engineer-deliberate",
+      "policy": "engineer-deliberate",
+      "runs": 40,
+      "winRate": 0.1,
+      "wavesP5": 2,
+      "wavesP50": 10,
+      "wavesP95": 18,
+      "minutesP50": 5.5,
+      "minutesP5": 1.3,
+      "minutesP95": 9.1,
+      "winRateCI95": [
+        0.03957888759557486,
+        0.23052074380473897
+      ],
+      "meanInterestShare": 0.03879956118917153,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 31,
+          "leaks": 132
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 37,
+          "leakRuns": 16,
+          "leaks": 71
+        }
+      ],
+      "supportRuns": 11,
+      "supportBuilds": 20,
+      "upgradedRuns": 16,
+      "upgrades": 30,
+      "rerollRuns": 1,
+      "rerolls": 1,
+      "rerollFees": 25,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/compound/hard/engineer-deliberate.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "hard",
+      "group": "matched-seeds",
+      "profile": "engineer",
+      "policy": "engineer",
+      "runs": 40,
+      "winRate": 0.2,
+      "wavesP5": 2,
+      "wavesP50": 13,
+      "wavesP95": 18,
+      "minutesP50": 5.8,
+      "minutesP5": 1.2,
+      "minutesP95": 8.9,
+      "winRateCI95": [
+        0.10499864973166874,
+        0.34757607381856676
+      ],
+      "meanInterestShare": 0.033884926985627464,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 29,
+          "leaks": 122
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 38,
+          "leakRuns": 14,
+          "leaks": 56
+        }
+      ],
+      "supportRuns": 12,
+      "supportBuilds": 21,
+      "upgradedRuns": 16,
+      "upgrades": 32,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/compound/hard/engineer.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "medium",
+      "group": "neutral-controls",
+      "profile": "force-arc",
+      "policy": "force-arc",
+      "runs": 40,
+      "winRate": 0,
+      "wavesP5": 6,
+      "wavesP50": 10,
+      "wavesP95": 12,
+      "minutesP50": 4.3,
+      "minutesP5": 2.8,
+      "minutesP95": 6.1,
+      "winRateCI95": [
+        0,
+        0.08762453925039232
+      ],
+      "meanInterestShare": 0.02999787001181132,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 14,
+          "leaks": 24
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 4,
+          "leaks": 5
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 0,
+      "upgrades": 0,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "neutral-controls/compound/medium/force-arc.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "medium",
+      "group": "neutral-controls",
+      "profile": "force-ember",
+      "policy": "force-ember",
+      "runs": 40,
+      "winRate": 0.025,
+      "wavesP5": 7,
+      "wavesP50": 10,
+      "wavesP95": 15,
+      "minutesP50": 3.6,
+      "minutesP5": 2.6,
+      "minutesP95": 7.2,
+      "winRateCI95": [
+        0.0044267174077949195,
+        0.1288165948800778
+      ],
+      "meanInterestShare": 0.03040476493047762,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 1,
+          "leaks": 4
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 7,
+      "upgrades": 31,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "neutral-controls/compound/medium/force-ember.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-compound"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "easy",
+      "group": "matched-seeds",
+      "profile": "engineer-apprentice",
+      "policy": "engineer-apprentice",
+      "runs": 40,
+      "winRate": 0.425,
+      "wavesP5": 13,
+      "wavesP50": 17,
+      "wavesP95": 18,
+      "minutesP50": 6.4,
+      "minutesP5": 5.2,
+      "minutesP95": 8.2,
+      "winRateCI95": [
+        0.28509168524815875,
+        0.5780519956394001
+      ],
+      "meanInterestShare": 0.010646341047009535,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 19,
+      "upgrades": 98,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/pact/easy/engineer-apprentice.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "easy",
+      "group": "matched-seeds",
+      "profile": "engineer-deliberate",
+      "policy": "engineer-deliberate",
+      "runs": 40,
+      "winRate": 0.925,
+      "wavesP5": 16,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 7.1,
+      "minutesP5": 5.4,
+      "minutesP95": 8.9,
+      "winRateCI95": [
+        0.8013546984090248,
+        0.9741644432281419
+      ],
+      "meanInterestShare": 0.015248936563877356,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 23,
+      "supportBuilds": 55,
+      "upgradedRuns": 40,
+      "upgrades": 315,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/pact/easy/engineer-deliberate.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "easy",
+      "group": "matched-seeds",
+      "profile": "engineer",
+      "policy": "engineer",
+      "runs": 40,
+      "winRate": 1,
+      "wavesP5": 18,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.4,
+      "minutesP5": 4.7,
+      "minutesP95": 7.9,
+      "winRateCI95": [
+        0.9123754607496077,
+        1
+      ],
+      "meanInterestShare": 0.012970023075396322,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 22,
+      "supportBuilds": 66,
+      "upgradedRuns": 38,
+      "upgrades": 257,
+      "rerollRuns": 1,
+      "rerolls": 1,
+      "rerollFees": 25,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/pact/easy/engineer.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer-apprentice",
+      "policy": "engineer-apprentice",
+      "runs": 40,
+      "winRate": 0.075,
+      "wavesP5": 4,
+      "wavesP50": 13,
+      "wavesP95": 18,
+      "minutesP50": 6,
+      "minutesP5": 2,
+      "minutesP95": 8.2,
+      "winRateCI95": [
+        0.025835556771858226,
+        0.19864530159097524
+      ],
+      "meanInterestShare": 0.01036387091127548,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 16,
+          "leaks": 41
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 3,
+          "leaks": 4
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 0,
+      "upgrades": 0,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/pact/medium/engineer-apprentice.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer-deliberate",
+      "policy": "engineer-deliberate",
+      "runs": 40,
+      "winRate": 0.6,
+      "wavesP5": 13,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 7.5,
+      "minutesP5": 5.8,
+      "minutesP95": 8.9,
+      "winRateCI95": [
+        0.445956198273935,
+        0.7365188938759863
+      ],
+      "meanInterestShare": 0.016128273236124983,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 17,
+          "leaks": 48
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 3,
+          "leaks": 7
+        }
+      ],
+      "supportRuns": 20,
+      "supportBuilds": 46,
+      "upgradedRuns": 36,
+      "upgrades": 133,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/pact/medium/engineer-deliberate.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer",
+      "policy": "engineer",
+      "runs": 40,
+      "winRate": 0.625,
+      "wavesP5": 12,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.7,
+      "minutesP5": 4.8,
+      "minutesP95": 8.5,
+      "winRateCI95": [
+        0.47032160054531913,
+        0.7577722646420829
+      ],
+      "meanInterestShare": 0.012612698436576471,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 15,
+          "leaks": 40
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 1,
+          "leaks": 3
+        }
+      ],
+      "supportRuns": 23,
+      "supportBuilds": 73,
+      "upgradedRuns": 20,
+      "upgrades": 70,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/pact/medium/engineer.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "hard",
+      "group": "matched-seeds",
+      "profile": "engineer-apprentice",
+      "policy": "engineer-apprentice",
+      "runs": 40,
+      "winRate": 0,
+      "wavesP5": 3,
+      "wavesP50": 9,
+      "wavesP95": 14,
+      "minutesP50": 4.2,
+      "minutesP5": 1.4,
+      "minutesP95": 6.3,
+      "winRateCI95": [
+        0,
+        0.08762453925039232
+      ],
+      "meanInterestShare": 0.014459626445759119,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 32,
+          "leaks": 116
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 39,
+          "leakRuns": 17,
+          "leaks": 51
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 1,
+      "upgrades": 1,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/pact/hard/engineer-apprentice.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "hard",
+      "group": "matched-seeds",
+      "profile": "engineer-deliberate",
+      "policy": "engineer-deliberate",
+      "runs": 40,
+      "winRate": 0.275,
+      "wavesP5": 2,
+      "wavesP50": 12,
+      "wavesP95": 18,
+      "minutesP50": 5.9,
+      "minutesP5": 1.2,
+      "minutesP95": 9.3,
+      "winRateCI95": [
+        0.1610785343314309,
+        0.4283525083312457
+      ],
+      "meanInterestShare": 0.01941535752138901,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 35,
+          "leaks": 151
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 37,
+          "leakRuns": 18,
+          "leaks": 50
+        }
+      ],
+      "supportRuns": 10,
+      "supportBuilds": 19,
+      "upgradedRuns": 16,
+      "upgrades": 46,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/pact/hard/engineer-deliberate.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "hard",
+      "group": "matched-seeds",
+      "profile": "engineer",
+      "policy": "engineer",
+      "runs": 40,
+      "winRate": 0.3,
+      "wavesP5": 3,
+      "wavesP50": 14,
+      "wavesP95": 18,
+      "minutesP50": 6,
+      "minutesP5": 1.4,
+      "minutesP95": 8.8,
+      "winRateCI95": [
+        0.18074670915695296,
+        0.454303106543204
+      ],
+      "meanInterestShare": 0.015314406192321916,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 29,
+          "leaks": 122
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 39,
+          "leakRuns": 14,
+          "leaks": 35
+        }
+      ],
+      "supportRuns": 11,
+      "supportBuilds": 21,
+      "upgradedRuns": 18,
+      "upgrades": 46,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/pact/hard/engineer.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "medium",
+      "group": "neutral-controls",
+      "profile": "force-arc",
+      "policy": "force-arc",
+      "runs": 40,
+      "winRate": 0,
+      "wavesP5": 6,
+      "wavesP50": 10,
+      "wavesP95": 12,
+      "minutesP50": 4.1,
+      "minutesP5": 2.8,
+      "minutesP95": 5.7,
+      "winRateCI95": [
+        0,
+        0.08762453925039232
+      ],
+      "meanInterestShare": 0.018108531036966406,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 15,
+          "leaks": 25
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 6,
+          "leaks": 9
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 0,
+      "upgrades": 0,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "neutral-controls/pact/medium/force-arc.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "medium",
+      "group": "neutral-controls",
+      "profile": "force-ember",
+      "policy": "force-ember",
+      "runs": 40,
+      "winRate": 0,
+      "wavesP5": 7,
+      "wavesP50": 9,
+      "wavesP95": 13,
+      "minutesP50": 3.4,
+      "minutesP5": 2.4,
+      "minutesP95": 6.5,
+      "winRateCI95": [
+        0,
+        0.08762453925039232
+      ],
+      "meanInterestShare": 0.018462636589501178,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 0,
+      "supportBuilds": 0,
+      "upgradedRuns": 7,
+      "upgrades": 23,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "neutral-controls/pact/medium/force-ember.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-pact"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer-prepared",
+      "policy": "engineer-prepared",
+      "runs": 40,
+      "winRate": 0.8,
+      "wavesP5": 15,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 5.9,
+      "minutesP5": 4.7,
+      "minutesP95": 8.2,
+      "winRateCI95": [
+        0.6524239261814333,
+        0.8950013502683314
+      ],
+      "meanInterestShare": 0.014332519625307247,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 15,
+          "leaks": 40
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 3,
+          "leaks": 9
+        }
+      ],
+      "supportRuns": 28,
+      "supportBuilds": 88,
+      "upgradedRuns": 31,
+      "upgrades": 97,
+      "rerollRuns": 8,
+      "rerolls": 8,
+      "rerollFees": 200,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/raid/medium/engineer-prepared.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-prepared"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer-prepared",
+      "policy": "engineer-prepared",
+      "runs": 40,
+      "winRate": 0.675,
+      "wavesP5": 13,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.7,
+      "minutesP5": 5.3,
+      "minutesP95": 8.6,
+      "winRateCI95": [
+        0.52017458088898,
+        0.7991568303733828
+      ],
+      "meanInterestShare": 0.02838488561437765,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 15,
+          "leaks": 40
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 2,
+          "leaks": 4
+        }
+      ],
+      "supportRuns": 23,
+      "supportBuilds": 52,
+      "upgradedRuns": 33,
+      "upgrades": 123,
+      "rerollRuns": 2,
+      "rerolls": 2,
+      "rerollFees": 50,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/compound/medium/engineer-prepared.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-prepared"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "medium",
+      "group": "matched-seeds",
+      "profile": "engineer-prepared",
+      "policy": "engineer-prepared",
+      "runs": 40,
+      "winRate": 0.65,
+      "wavesP5": 13,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.7,
+      "minutesP5": 4.7,
+      "minutesP95": 8.7,
+      "winRateCI95": [
+        0.4950559699353738,
+        0.7786566682895086
+      ],
+      "meanInterestShare": 0.01383484228012429,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 15,
+          "leaks": 40
+        },
+        {
+          "wave": 3,
+          "reached": 40,
+          "completed": 40,
+          "leakRuns": 1,
+          "leaks": 3
+        }
+      ],
+      "supportRuns": 21,
+      "supportBuilds": 55,
+      "upgradedRuns": 30,
+      "upgrades": 96,
+      "rerollRuns": 1,
+      "rerolls": 1,
+      "rerollFees": 25,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "matched-seeds/pact/medium/engineer-prepared.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-prepared"
+    },
+    {
+      "variant": "raid",
+      "difficulty": "medium",
+      "group": "fixed-board-loot",
+      "profile": "engineer-prepared",
+      "policy": "engineer-prepared",
+      "runs": 24,
+      "winRate": 0.9166666666666666,
+      "wavesP5": 16,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 6.8,
+      "minutesP5": 5.2,
+      "minutesP95": 7.9,
+      "winRateCI95": [
+        0.741507847985494,
+        0.9768416721570266
+      ],
+      "meanInterestShare": 0.014126639476134453,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 24,
+          "completed": 24,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 24,
+          "completed": 24,
+          "leakRuns": 24,
+          "leaks": 48
+        },
+        {
+          "wave": 3,
+          "reached": 24,
+          "completed": 24,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 21,
+      "supportBuilds": 52,
+      "upgradedRuns": 17,
+      "upgrades": 60,
+      "rerollRuns": 8,
+      "rerolls": 8,
+      "rerollFees": 200,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "fixed-board-loot/raid/medium/engineer-prepared.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-prepared"
+    },
+    {
+      "variant": "compound",
+      "difficulty": "medium",
+      "group": "fixed-board-loot",
+      "profile": "engineer-prepared",
+      "policy": "engineer-prepared",
+      "runs": 24,
+      "winRate": 0.6666666666666666,
+      "wavesP5": 15,
+      "wavesP50": 18,
+      "wavesP95": 18,
+      "minutesP50": 7.2,
+      "minutesP5": 6.3,
+      "minutesP95": 7.9,
+      "winRateCI95": [
+        0.4670595949408046,
+        0.8202802131162036
+      ],
+      "meanInterestShare": 0.028553048780758764,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 24,
+          "completed": 24,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 24,
+          "completed": 24,
+          "leakRuns": 24,
+          "leaks": 48
+        },
+        {
+          "wave": 3,
+          "reached": 24,
+          "completed": 24,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 9,
+      "supportBuilds": 23,
+      "upgradedRuns": 24,
+      "upgrades": 64,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "fixed-board-loot/compound/medium/engineer-prepared.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-prepared"
+    },
+    {
+      "variant": "pact",
+      "difficulty": "medium",
+      "group": "fixed-board-loot",
+      "profile": "engineer-prepared",
+      "policy": "engineer-prepared",
+      "runs": 24,
+      "winRate": 0.3333333333333333,
+      "wavesP5": 12,
+      "wavesP50": 15,
+      "wavesP95": 18,
+      "minutesP50": 6.6,
+      "minutesP5": 5.3,
+      "minutesP95": 7.9,
+      "winRateCI95": [
+        0.17971978688379642,
+        0.5329404050591954
+      ],
+      "meanInterestShare": 0.014468227602665777,
+      "allReplaysVerified": true,
+      "rejectedCommands": 0,
+      "timeouts": 0,
+      "earlyWaves": [
+        {
+          "wave": 1,
+          "reached": 24,
+          "completed": 24,
+          "leakRuns": 0,
+          "leaks": 0
+        },
+        {
+          "wave": 2,
+          "reached": 24,
+          "completed": 24,
+          "leakRuns": 24,
+          "leaks": 48
+        },
+        {
+          "wave": 3,
+          "reached": 24,
+          "completed": 24,
+          "leakRuns": 0,
+          "leaks": 0
+        }
+      ],
+      "supportRuns": 7,
+      "supportBuilds": 17,
+      "upgradedRuns": 18,
+      "upgrades": 43,
+      "rerollRuns": 0,
+      "rerolls": 0,
+      "rerollFees": 0,
+      "skills": "Oracle-assisted heuristic policies, not calibrated human intelligence/dexterity. Prepared uses bounded next-wave safety forecasting and only public loot weights.",
+      "reportFile": "fixed-board-loot/pact/medium/engineer-prepared.report.json",
+      "artifactRoot": "experiments/0004-raid-heat/out/validation-heldout-v4-prepared"
+    }
+  ],
+  "preparedPaired": [
+    {
+      "variant": "raid",
+      "improvement": 1,
+      "regression": 2,
+      "same": 37,
+      "differing": [
+        {
+          "seed": 208,
+          "engineer": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "lost",
+            "waves": 15,
+            "rerolls": 1
+          }
+        },
+        {
+          "seed": 213,
+          "engineer": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "lost",
+            "waves": 17,
+            "rerolls": 0
+          }
+        },
+        {
+          "seed": 225,
+          "engineer": {
+            "outcome": "lost",
+            "waves": 13,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          }
+        }
+      ],
+      "caveat": "Whole-policy paired comparison: reserve/placement/timing may differ before reroll, not isolated reroll causality."
+    },
+    {
+      "variant": "compound",
+      "improvement": 1,
+      "regression": 5,
+      "same": 34,
+      "differing": [
+        {
+          "seed": 203,
+          "engineer": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "lost",
+            "waves": 17,
+            "rerolls": 0
+          }
+        },
+        {
+          "seed": 207,
+          "engineer": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "lost",
+            "waves": 17,
+            "rerolls": 0
+          }
+        },
+        {
+          "seed": 209,
+          "engineer": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "lost",
+            "waves": 15,
+            "rerolls": 0
+          }
+        },
+        {
+          "seed": 212,
+          "engineer": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "lost",
+            "waves": 16,
+            "rerolls": 0
+          }
+        },
+        {
+          "seed": 228,
+          "engineer": {
+            "outcome": "lost",
+            "waves": 14,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 1
+          }
+        },
+        {
+          "seed": 236,
+          "engineer": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "lost",
+            "waves": 16,
+            "rerolls": 0
+          }
+        }
+      ],
+      "caveat": "Whole-policy paired comparison: reserve/placement/timing may differ before reroll, not isolated reroll causality."
+    },
+    {
+      "variant": "pact",
+      "improvement": 3,
+      "regression": 2,
+      "same": 35,
+      "differing": [
+        {
+          "seed": 205,
+          "engineer": {
+            "outcome": "lost",
+            "waves": 17,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          }
+        },
+        {
+          "seed": 210,
+          "engineer": {
+            "outcome": "lost",
+            "waves": 17,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          }
+        },
+        {
+          "seed": 216,
+          "engineer": {
+            "outcome": "lost",
+            "waves": 17,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          }
+        },
+        {
+          "seed": 228,
+          "engineer": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "lost",
+            "waves": 17,
+            "rerolls": 0
+          }
+        },
+        {
+          "seed": 234,
+          "engineer": {
+            "outcome": "won",
+            "waves": 18,
+            "rerolls": 0
+          },
+          "prepared": {
+            "outcome": "lost",
+            "waves": 15,
+            "rerolls": 0
+          }
+        }
+      ],
+      "caveat": "Whole-policy paired comparison: reserve/placement/timing may differ before reroll, not isolated reroll causality."
+    }
+  ],
+  "caveats": [
+    "Held-out data was not used to retune rules or policies.",
+    "Oracle-assisted heuristic policies are skill/execution proxies, not calibrated humans.",
+    "Neutral forced-type controls vary policy and patch effects relative to expert; they are stress baselines, not clean patch-only causal ablations.",
+    "Fixed-board loot trials isolate the board, not downstream adaptive command schedules.",
+    "Failure to win in 40 seeds does not establish impossibility; 0/40 Wilson upper95% bound is about8.8%."
+  ]
+}

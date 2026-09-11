@@ -99,3 +99,47 @@ Per [[ADR-0013-wave-composer-and-towers]], these are the M1 sweep targets. Each 
 - Run length must be an invariant, not just a report: budget growth lengthened waves to hours before it made them hard. M1 caps enemies per wave and lets the budget buy HP tiers and tags.
 - HP growth is a 600-bp-wide cliff between "random bot wins" and "random bot loses". Sweeps must be fine-grained around it.
 - With the placeholder economy, early-call gold dwarfs interest, so the knife edge from ADR-0012 does not exist yet. The first M1 sweep is interest rate x bounty base x start gold, with the invariant `Margin(n)` computed per wave.
+
+## Playable demo checkpoint (2026-09-10 local / 2026-09-11 UTC)
+
+Per [[ADR-0015-playable-demo-validation]], M3's human-testing surface is now
+available before the full M2 ceiling/fuzzer. M1 has capped HP-tier composition,
+seven tower roles, five archetypes, matrix/slow/splash/chain/reveal/aura behavior,
+stacking patches and a provisional difficulty spread. Full enemy behavior and
+per-type curve calibration are not complete.
+
+Experiment 0002 records 6,930 replay-verified sweep runs and 200-seed strategy /
+execution ladders. Presets scale defense prices (80%/100%/125%); no-patch greedy
+clears 93%/77%/40%. `player-deliberate`, `player-hesitant` and `player-rushed4x`
+separate action cadence/missed opportunities from strategy. They do not model
+perception, motor accuracy or the benefit of paused planning.
+
+`probeDefense` searches one greedy prefix at a time on an exact seed and writes
+an isolated-wave replay for each successful defense. Its result is an **upper
+bound on MinDefenseCost**, giving a **lower bound on Margin**. It ignores costs
+of transitioning an existing defense to the found layout. The original all-wave
+3–6% band and god-run-rate gate have not passed and must not be claimed complete.
+CI currently enforces broader demo rates, winning-run duration, replay parity
+and three explicitly named late-wave witnesses. The next input is the user's
+replays and notes via `balance compare`, followed by a stronger build-order oracle.
+
+## Drop-dependent lab checkpoint (2026-09-11, supersedes demo-1 targets)
+
+The human Medium7 run falsified the old provisional rates as a measure of
+interesting play. Per [[ADR-0018-drop-dependent-playtest-checkpoint]], v4 now
+ships three18-wave labs with nine towers, status/support combinations and
+paid rerolls. Easy prices70%, Medium100%, Hard125%. Geometric budget/HP growth
+overtakes ordinary capped bounty income without a discrete late-wall multiplier.
+
+1512 untouched-seed profile/control/loot runs and360 fresh offer-led learner
+runs all replay exactly, with no illegal commands. Six causal avenues and a
+reroll rescue retain positive/negative replay pairs. The reasonable learner
+now saves for matching towers; the old cheapest-tower apprentice remains only
+a myopic diagnostic. Exact-next-wave Engineer forecasts are oracle-assisted.
+
+The zero-drop all-wave margin above is historical, not this trial's acceptance
+gate: drop-dependent late wins are now intentional. No claim of a solved
+minimum-defense cost, 3–6% invariant, calibrated intelligence/dexterity, actual
+bot enjoyment or measured sustained god-run rate is made. CI now protects broad
+lab regression behavior, geometry, economy and replay parity. Next input is
+human fun/choice/pacing feedback on new runs; retain the diary and git checkpoints.

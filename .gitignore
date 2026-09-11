@@ -3,3 +3,7 @@ dist/
 experiments/*/out/
 *.log
 .DS_Store
+*.tsbuildinfo
+test-results/
+playwright-report/
+dist-types/

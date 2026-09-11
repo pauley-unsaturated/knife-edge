@@ -1,0 +1,173 @@
+[
+  {
+    "case": "easy",
+    "data": "demo-1/easy",
+    "policy": "player-deliberate",
+    "runs": 200,
+    "winRate": 0.925,
+    "wavesP5": 27,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 26.7,
+    "minutesP5": 25.1,
+    "minutesP95": 28.2,
+    "winRateCI95": [
+      0.8799554020266798,
+      0.9540254929427476
+    ],
+    "meanInterestShare": 0.009859098442998225,
+    "replayVerified": 200
+  },
+  {
+    "case": "easy",
+    "data": "demo-1/easy",
+    "policy": "player-hesitant",
+    "runs": 200,
+    "winRate": 0.87,
+    "wavesP5": 25,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 28.1,
+    "minutesP5": 25,
+    "minutesP95": 30,
+    "winRateCI95": [
+      0.8163353692726989,
+      0.9097185863477437
+    ],
+    "meanInterestShare": 0.008124131473200121,
+    "replayVerified": 200
+  },
+  {
+    "case": "easy",
+    "data": "demo-1/easy",
+    "policy": "player-rushed4x",
+    "runs": 200,
+    "winRate": 0.88,
+    "wavesP5": 25,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 29.2,
+    "minutesP5": 25.7,
+    "minutesP95": 31,
+    "winRateCI95": [
+      0.8276563857409517,
+      0.9180206497611246
+    ],
+    "meanInterestShare": 0.010097876617460881,
+    "replayVerified": 200
+  },
+  {
+    "case": "medium",
+    "data": "demo-1/medium",
+    "policy": "player-deliberate",
+    "runs": 200,
+    "winRate": 0.725,
+    "wavesP5": 22,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 27.1,
+    "minutesP5": 20,
+    "minutesP95": 28.8,
+    "winRateCI95": [
+      0.6593153404748534,
+      0.7822039568619022
+    ],
+    "meanInterestShare": 0.012804927381536475,
+    "replayVerified": 200
+  },
+  {
+    "case": "medium",
+    "data": "demo-1/medium",
+    "policy": "player-hesitant",
+    "runs": 200,
+    "winRate": 0.7,
+    "wavesP5": 22,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 28,
+    "minutesP5": 21.1,
+    "minutesP95": 30.1,
+    "winRateCI95": [
+      0.6332080400667355,
+      0.759253557565936
+    ],
+    "meanInterestShare": 0.012932236416233842,
+    "replayVerified": 200
+  },
+  {
+    "case": "medium",
+    "data": "demo-1/medium",
+    "policy": "player-rushed4x",
+    "runs": 200,
+    "winRate": 0.665,
+    "wavesP5": 19,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 29.1,
+    "minutesP5": 18.5,
+    "minutesP95": 31,
+    "winRateCI95": [
+      0.5970206277343806,
+      0.7267601903125736
+    ],
+    "meanInterestShare": 0.014312091607030942,
+    "replayVerified": 200
+  },
+  {
+    "case": "hard",
+    "data": "demo-1/hard",
+    "policy": "player-deliberate",
+    "runs": 200,
+    "winRate": 0.395,
+    "wavesP5": 15,
+    "wavesP50": 28,
+    "wavesP95": 30,
+    "minutesP50": 26.4,
+    "minutesP5": 14.3,
+    "minutesP95": 28.8,
+    "winRateCI95": [
+      0.3298398699878317,
+      0.4641177912550158
+    ],
+    "meanInterestShare": 0.01398840335765366,
+    "replayVerified": 200
+  },
+  {
+    "case": "hard",
+    "data": "demo-1/hard",
+    "policy": "player-hesitant",
+    "runs": 200,
+    "winRate": 0.375,
+    "wavesP5": 16,
+    "wavesP50": 27,
+    "wavesP95": 30,
+    "minutesP50": 27.1,
+    "minutesP5": 14.9,
+    "minutesP95": 30.2,
+    "winRateCI95": [
+      0.3108532530524515,
+      0.44385824842712884
+    ],
+    "meanInterestShare": 0.014028458339386212,
+    "replayVerified": 200
+  },
+  {
+    "case": "hard",
+    "data": "demo-1/hard",
+    "policy": "player-rushed4x",
+    "runs": 200,
+    "winRate": 0.365,
+    "wavesP5": 14,
+    "wavesP50": 27,
+    "wavesP95": 30,
+    "minutesP50": 27.8,
+    "minutesP5": 13.6,
+    "minutesP95": 31,
+    "winRateCI95": [
+      0.3014041621876483,
+      0.4336842594102984
+    ],
+    "meanInterestShare": 0.013743567757927115,
+    "replayVerified": 200
+  }
+]

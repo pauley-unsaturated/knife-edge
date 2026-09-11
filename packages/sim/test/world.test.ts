@@ -49,13 +49,15 @@ describe("determinism", () => {
     expect(a.finalHash).not.toBe(b.finalHash);
   });
   it("golden run: an undefended board loses, and the hash is pinned", () => {
+    // demo-4: a six-enemy introductory wave is survivable with12core;
+    // undefended seed99 now dies during the armored second wave.
     const r = runReplay(data, replay, 200_000);
     expect(r.state.outcome).toBe("lost");
     expect({ ticks: r.ticks, wave: r.state.wave, hash: r.finalHash }).toMatchInlineSnapshot(`
       {
-        "hash": 2462598994,
-        "ticks": 3591,
-        "wave": 5,
+        "hash": 40312270,
+        "ticks": 927,
+        "wave": 2,
       }
     `);
   });

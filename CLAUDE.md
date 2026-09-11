@@ -4,7 +4,7 @@ Guidance for coding agents working in this repository. Read `HANDOFF.md` for the
 
 ## What this is
 
-Knife Edge: a roguelike tower defense with a retro (NES/SNES vibe) presentation whose signature is razor-thin balance between enemy power, tower power, and income. Web is the primary target, iOS follows via Capacitor. The design lives in `vault/`; the code is a headless simulation plus a balance toolkit; a renderer comes later.
+Knife Edge: a roguelike tower defense with a retro (NES/SNES vibe) presentation whose signature is razor-thin balance between enemy power, tower power, and income. Web is the primary target, iOS follows via Capacitor. The design lives in `vault/`; the code includes a headless simulation, balance toolkit and playable placeholder web renderer. Difficulty is provisionally measured, not yet human-calibrated; read `HANDOFF.md` for the limits.
 
 ## Commands
 
@@ -12,6 +12,11 @@ Knife Edge: a roguelike tower defense with a retro (NES/SNES vibe) presentation 
 pnpm install                 # Node 22, pnpm 10
 pnpm test                    # vitest: determinism, golden hash, pathing, economy
 pnpm typecheck               # tsc -b across packages
+pnpm dev                     # playable demo at http://127.0.0.1:5173
+pnpm build                   # production web build
+pnpm validate:balance        # current mechanic-lab regression and replay gates
+pnpm test:browser             # requires pnpm exec playwright install chromium webkit
+pnpm balance compare --file path/to/human.replay.json
 pnpm balance run --policy random,greedy --seeds 1..20 --verbose
 pnpm balance run --policy greedy --seeds 1..50 --set "composer.hpGrowthBp=11200;economy.interestBp=500" --out experiments/NNNN-name/out
 pnpm balance replay --file experiments/NNNN-name/out/greedy-7.replay.json
@@ -27,7 +32,9 @@ CI (`.github/workflows/ci.yml`) runs typecheck, tests, and a smoke batch on ever
 | `vault/` | Design vault (PunkRecords-compatible markdown: YAML frontmatter + `[[wikilinks]]`). Start at `vault/Index.md`. |
 | `packages/sim/` | Simulation core. Pure TypeScript, no DOM, no engine, no I/O, no floats, no `Math.random`, no wall-clock. |
 | `tools/balance/` | Bot policies, batch runner, CLI. Imports the sim; never the other way round. |
-| `data/game.json` | Every tunable. Rates in basis points (10000 = 1.0), distances in cells, speeds in fixed-point units per tick. |
+| `packages/render-phaser/` | Placeholder board and engine-independent Session clock/replay transport. |
+| `apps/web/` | Vite shell, DOM controls, save/recovery and browser tests. |
+| `data/game.json`, `data/compound.json`, `data/pact.json` | Raid/Heat, Compound and Glass Cannon lab tunables. Rates in basis points (10000 = 1.0), distances in cells, speeds in fixed-point units per tick. |
 | `experiments/NNNN-name/` | One folder per experiment: `README.md` with hypothesis, method, results table, findings, reproduce command. `out/` is gitignored. |
 | `Scripts/new-note.sh` | Emits a frontmatter header for a new vault note. |
 

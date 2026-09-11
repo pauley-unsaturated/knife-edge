@@ -24,3 +24,7 @@ tags: [decisions, index, stratum-3]
 | [[ADR-0012-mazing-and-economy]] | Open-grid mazing; bounty + interest + early-call economy | accepted | B4, B7 |
 | [[ADR-0013-wave-composer-and-towers]] | Budgeted wave composer; flat-ladder towers + damage-tag matrix + stacking relics (hyperparameters to sweep) | accepted with amendments | B6, B8 |
 | [[ADR-0014-begin-m0]] | Begin M0: headless sim before any renderer | accepted | supersedes ADR-0003 scope |
+| [[ADR-0015-playable-demo-validation]] | Playable demo with provisional affordability and execution bands | accepted for playtest | none; B13 ceiling remains pending |
+| [[ADR-0016-raid-heat-prototype]] | Raid/heat and compact geometric-pressure prototype | experimental; amends prior run length | reopens B6, B7, B8, B11 |
+| [[ADR-0017-status-and-support-engine-lab]] | Rare effects, support combos and replay-backed driver/judge iteration | experimental; not fun-certified | reopens B6, B8 |
+| [[ADR-0018-drop-dependent-playtest-checkpoint]] | Promote three drop-dependent labs with held-out and causal witnesses | accepted for human trial; not final calibration | amends B8/B13 validation |

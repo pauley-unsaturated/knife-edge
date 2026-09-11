@@ -1,0 +1,1541 @@
+[
+  {
+    "case": "gold90-bounty1-interest0",
+    "data": "demo-1+gold90-bounty1-interest0",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 14,
+    "wavesP50": 22,
+    "wavesP95": 27,
+    "minutesP50": 19.6,
+    "minutesP5": 12.5,
+    "minutesP95": 25,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty1-interest0",
+    "data": "demo-1+gold90-bounty1-interest0",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 13,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 13.3,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty1-interest0",
+    "data": "demo-1+gold90-bounty1-interest0",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 16,
+    "wavesP50": 22,
+    "wavesP95": 27,
+    "minutesP50": 19.7,
+    "minutesP5": 14.1,
+    "minutesP95": 23.8,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty1-interest300",
+    "data": "demo-1+gold90-bounty1-interest300",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 15,
+    "wavesP50": 23,
+    "wavesP95": 28,
+    "minutesP50": 20.6,
+    "minutesP5": 13.7,
+    "minutesP95": 26.6,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.016155408114568347,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty1-interest300",
+    "data": "demo-1+gold90-bounty1-interest300",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 19,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 20.3,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.05097546187443632,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty1-interest300",
+    "data": "demo-1+gold90-bounty1-interest300",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 16,
+    "wavesP50": 22,
+    "wavesP95": 27,
+    "minutesP50": 19.6,
+    "minutesP5": 14.4,
+    "minutesP95": 24.6,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.07283846224231696,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty1-interest600",
+    "data": "demo-1+gold90-bounty1-interest600",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 16,
+    "wavesP50": 22,
+    "wavesP95": 28,
+    "minutesP50": 19.6,
+    "minutesP5": 14.3,
+    "minutesP95": 26.7,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.036456721703390274,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty1-interest600",
+    "data": "demo-1+gold90-bounty1-interest600",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 21,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 22.1,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.12482684411171603,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty1-interest600",
+    "data": "demo-1+gold90-bounty1-interest600",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.2,
+    "wavesP5": 15,
+    "wavesP50": 21,
+    "wavesP95": 30,
+    "minutesP50": 18.5,
+    "minutesP5": 13.7,
+    "minutesP95": 27.4,
+    "winRateCI95": [
+      0.056680947980693314,
+      0.5098431532792765
+    ],
+    "meanInterestShare": 0.14183294336383068,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty2-interest0",
+    "data": "demo-1+gold90-bounty2-interest0",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.6,
+    "minutesP5": 12.5,
+    "minutesP95": 26.4,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty2-interest0",
+    "data": "demo-1+gold90-bounty2-interest0",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.1,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 30,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 29,
+    "winRateCI95": [
+      0.01787574951572113,
+      0.4041563854975721
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty2-interest0",
+    "data": "demo-1+gold90-bounty2-interest0",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 25,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.7,
+    "minutesP5": 22.6,
+    "minutesP95": 26.7,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty2-interest300",
+    "data": "demo-1+gold90-bounty2-interest300",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.3,
+    "minutesP5": 12.6,
+    "minutesP95": 26.2,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0.012627326715429738,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty2-interest300",
+    "data": "demo-1+gold90-bounty2-interest300",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 23,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 23.5,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.04506079304619072,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty2-interest300",
+    "data": "demo-1+gold90-bounty2-interest300",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.7,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.7,
+    "minutesP5": 12.5,
+    "minutesP95": 26.8,
+    "winRateCI95": [
+      0.39677321997956516,
+      0.892210712513788
+    ],
+    "meanInterestShare": 0.043207774731988724,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty2-interest600",
+    "data": "demo-1+gold90-bounty2-interest600",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.7,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.1,
+    "minutesP5": 12.7,
+    "minutesP95": 26.4,
+    "winRateCI95": [
+      0.39677321997956516,
+      0.892210712513788
+    ],
+    "meanInterestShare": 0.023791839430164233,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty2-interest600",
+    "data": "demo-1+gold90-bounty2-interest600",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 28,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 27.9,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.10279891936197283,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty2-interest600",
+    "data": "demo-1+gold90-bounty2-interest600",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.4,
+    "minutesP5": 12.5,
+    "minutesP95": 26.4,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0.0842862494697384,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty3-interest0",
+    "data": "demo-1+gold90-bounty3-interest0",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.6,
+    "minutesP5": 24.3,
+    "minutesP95": 25.8,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty3-interest0",
+    "data": "demo-1+gold90-bounty3-interest0",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.2,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 30,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 29.4,
+    "winRateCI95": [
+      0.056680947980693314,
+      0.5098431532792765
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty3-interest0",
+    "data": "demo-1+gold90-bounty3-interest0",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.9,
+    "wavesP5": 29,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25,
+    "minutesP5": 24.3,
+    "minutesP95": 26.6,
+    "winRateCI95": [
+      0.5958436145024278,
+      0.9821242504842788
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty3-interest300",
+    "data": "demo-1+gold90-bounty3-interest300",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.6,
+    "minutesP5": 24.2,
+    "minutesP95": 25.8,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.00838852802343517,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty3-interest300",
+    "data": "demo-1+gold90-bounty3-interest300",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.3,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 30,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 28.8,
+    "winRateCI95": [
+      0.10778928748621183,
+      0.6032267800204347
+    ],
+    "meanInterestShare": 0.04245609184758862,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty3-interest300",
+    "data": "demo-1+gold90-bounty3-interest300",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.5,
+    "minutesP5": 24.3,
+    "minutesP95": 25.9,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.030229476219005524,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty3-interest600",
+    "data": "demo-1+gold90-bounty3-interest600",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.9,
+    "wavesP5": 29,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.5,
+    "minutesP5": 24.2,
+    "minutesP95": 26.7,
+    "winRateCI95": [
+      0.5958436145024278,
+      0.9821242504842788
+    ],
+    "meanInterestShare": 0.017542790447532257,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty3-interest600",
+    "data": "demo-1+gold90-bounty3-interest600",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.2,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 30,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 29.6,
+    "winRateCI95": [
+      0.056680947980693314,
+      0.5098431532792765
+    ],
+    "meanInterestShare": 0.09281606126175897,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold90-bounty3-interest600",
+    "data": "demo-1+gold90-bounty3-interest600",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.7,
+    "minutesP5": 24.2,
+    "minutesP95": 25.8,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.0596397007646974,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty1-interest0",
+    "data": "demo-1+gold120-bounty1-interest0",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.1,
+    "wavesP5": 15,
+    "wavesP50": 22,
+    "wavesP95": 30,
+    "minutesP50": 19.6,
+    "minutesP5": 13.8,
+    "minutesP95": 27.8,
+    "winRateCI95": [
+      0.01787574951572113,
+      0.4041563854975721
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty1-interest0",
+    "data": "demo-1+gold120-bounty1-interest0",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 9,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 9.2,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty1-interest0",
+    "data": "demo-1+gold120-bounty1-interest0",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 16,
+    "wavesP50": 21,
+    "wavesP95": 27,
+    "minutesP50": 18.7,
+    "minutesP5": 14.5,
+    "minutesP95": 24.3,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty1-interest300",
+    "data": "demo-1+gold120-bounty1-interest300",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 15,
+    "wavesP50": 25,
+    "wavesP95": 28,
+    "minutesP50": 22.7,
+    "minutesP5": 13.8,
+    "minutesP95": 26.4,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.016552238117159994,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty1-interest300",
+    "data": "demo-1+gold120-bounty1-interest300",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 9,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 9.2,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.08401796232410284,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty1-interest300",
+    "data": "demo-1+gold120-bounty1-interest300",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 14,
+    "wavesP50": 22,
+    "wavesP95": 28,
+    "minutesP50": 19.7,
+    "minutesP5": 12.5,
+    "minutesP95": 26.9,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.07238614634394577,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty1-interest600",
+    "data": "demo-1+gold120-bounty1-interest600",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.1,
+    "wavesP5": 18,
+    "wavesP50": 23,
+    "wavesP95": 30,
+    "minutesP50": 20.4,
+    "minutesP5": 16,
+    "minutesP95": 27.2,
+    "winRateCI95": [
+      0.01787574951572113,
+      0.4041563854975721
+    ],
+    "meanInterestShare": 0.036027174008066966,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty1-interest600",
+    "data": "demo-1+gold120-bounty1-interest600",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 11,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 11.1,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.1426007938003278,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty1-interest600",
+    "data": "demo-1+gold120-bounty1-interest600",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.2,
+    "wavesP5": 16,
+    "wavesP50": 22,
+    "wavesP95": 30,
+    "minutesP50": 19.8,
+    "minutesP5": 14.5,
+    "minutesP95": 27,
+    "winRateCI95": [
+      0.056680947980693314,
+      0.5098431532792765
+    ],
+    "meanInterestShare": 0.14273642540596074,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty2-interest0",
+    "data": "demo-1+gold120-bounty2-interest0",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.4,
+    "minutesP5": 12.6,
+    "minutesP95": 27.5,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty2-interest0",
+    "data": "demo-1+gold120-bounty2-interest0",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 28,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 28.5,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty2-interest0",
+    "data": "demo-1+gold120-bounty2-interest0",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 26,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.7,
+    "minutesP5": 23.6,
+    "minutesP95": 26.6,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty2-interest300",
+    "data": "demo-1+gold120-bounty2-interest300",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 20,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.4,
+    "minutesP5": 18.1,
+    "minutesP95": 27.2,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0.01274727760162494,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty2-interest300",
+    "data": "demo-1+gold120-bounty2-interest300",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 29,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 28.9,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.05933259528082428,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty2-interest300",
+    "data": "demo-1+gold120-bounty2-interest300",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.2,
+    "minutesP5": 12.5,
+    "minutesP95": 26.7,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0.04365963401430647,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty2-interest600",
+    "data": "demo-1+gold120-bounty2-interest600",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.4,
+    "minutesP5": 24.8,
+    "minutesP95": 27.7,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.023153386545417425,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty2-interest600",
+    "data": "demo-1+gold120-bounty2-interest600",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 28,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 28.6,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.10960611714842368,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty2-interest600",
+    "data": "demo-1+gold120-bounty2-interest600",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.4,
+    "minutesP5": 12.6,
+    "minutesP95": 26.4,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0.08400563561945393,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty3-interest0",
+    "data": "demo-1+gold120-bounty3-interest0",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.5,
+    "minutesP5": 24.2,
+    "minutesP95": 27.2,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty3-interest0",
+    "data": "demo-1+gold120-bounty3-interest0",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.1,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 30,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 28.5,
+    "winRateCI95": [
+      0.01787574951572113,
+      0.4041563854975721
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty3-interest0",
+    "data": "demo-1+gold120-bounty3-interest0",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.6,
+    "minutesP5": 24.3,
+    "minutesP95": 25.8,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty3-interest300",
+    "data": "demo-1+gold120-bounty3-interest300",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.5,
+    "minutesP5": 24.2,
+    "minutesP95": 26.3,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.00866620943393773,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty3-interest300",
+    "data": "demo-1+gold120-bounty3-interest300",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.1,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 30,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 29.7,
+    "winRateCI95": [
+      0.01787574951572113,
+      0.4041563854975721
+    ],
+    "meanInterestShare": 0.04931863016002225,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty3-interest300",
+    "data": "demo-1+gold120-bounty3-interest300",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.5,
+    "minutesP5": 24.2,
+    "minutesP95": 26.9,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.030407907148940216,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty3-interest600",
+    "data": "demo-1+gold120-bounty3-interest600",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.5,
+    "minutesP5": 24.2,
+    "minutesP95": 25.6,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.01709111532444168,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty3-interest600",
+    "data": "demo-1+gold120-bounty3-interest600",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.3,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 30,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 30.4,
+    "winRateCI95": [
+      0.10778928748621183,
+      0.6032267800204347
+    ],
+    "meanInterestShare": 0.09280767631596437,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold120-bounty3-interest600",
+    "data": "demo-1+gold120-bounty3-interest600",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.7,
+    "minutesP5": 24.2,
+    "minutesP95": 25.7,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.059821992687910566,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty1-interest0",
+    "data": "demo-1+gold150-bounty1-interest0",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.1,
+    "wavesP5": 17,
+    "wavesP50": 22,
+    "wavesP95": 30,
+    "minutesP50": 19.8,
+    "minutesP5": 15.4,
+    "minutesP95": 27.7,
+    "winRateCI95": [
+      0.01787574951572113,
+      0.4041563854975721
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty1-interest0",
+    "data": "demo-1+gold150-bounty1-interest0",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 17,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 18,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty1-interest0",
+    "data": "demo-1+gold150-bounty1-interest0",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 14,
+    "wavesP50": 22,
+    "wavesP95": 27,
+    "minutesP50": 19.6,
+    "minutesP5": 12.5,
+    "minutesP95": 25,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty1-interest300",
+    "data": "demo-1+gold150-bounty1-interest300",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.2,
+    "wavesP5": 18,
+    "wavesP50": 25,
+    "wavesP95": 30,
+    "minutesP50": 22.9,
+    "minutesP5": 15.8,
+    "minutesP95": 27.6,
+    "winRateCI95": [
+      0.056680947980693314,
+      0.5098431532792765
+    ],
+    "meanInterestShare": 0.01575125593706895,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty1-interest300",
+    "data": "demo-1+gold150-bounty1-interest300",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 2,
+    "wavesP95": 18,
+    "minutesP50": 3.1,
+    "minutesP5": 0.9,
+    "minutesP95": 19.2,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.0792703899359363,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty1-interest300",
+    "data": "demo-1+gold150-bounty1-interest300",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 17,
+    "wavesP50": 21,
+    "wavesP95": 28,
+    "minutesP50": 18.5,
+    "minutesP5": 15.4,
+    "minutesP95": 25.9,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.07227530094668536,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty1-interest600",
+    "data": "demo-1+gold150-bounty1-interest600",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.2,
+    "wavesP5": 16,
+    "wavesP50": 20,
+    "wavesP95": 30,
+    "minutesP50": 18.1,
+    "minutesP5": 14.3,
+    "minutesP95": 27.7,
+    "winRateCI95": [
+      0.056680947980693314,
+      0.5098431532792765
+    ],
+    "meanInterestShare": 0.037174774141948544,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty1-interest600",
+    "data": "demo-1+gold150-bounty1-interest600",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 4,
+    "wavesP95": 21,
+    "minutesP50": 4.5,
+    "minutesP5": 0.9,
+    "minutesP95": 21.2,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.11888102695390983,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty1-interest600",
+    "data": "demo-1+gold150-bounty1-interest600",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.2,
+    "wavesP5": 13,
+    "wavesP50": 20,
+    "wavesP95": 30,
+    "minutesP50": 18.1,
+    "minutesP5": 12.2,
+    "minutesP95": 26.6,
+    "winRateCI95": [
+      0.056680947980693314,
+      0.5098431532792765
+    ],
+    "meanInterestShare": 0.14476575509611705,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty2-interest0",
+    "data": "demo-1+gold150-bounty2-interest0",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.7,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.4,
+    "minutesP5": 13.1,
+    "minutesP95": 27.5,
+    "winRateCI95": [
+      0.39677321997956516,
+      0.892210712513788
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty2-interest0",
+    "data": "demo-1+gold150-bounty2-interest0",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.1,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 30,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 29.8,
+    "winRateCI95": [
+      0.01787574951572113,
+      0.4041563854975721
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty2-interest0",
+    "data": "demo-1+gold150-bounty2-interest0",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.6,
+    "minutesP5": 12.5,
+    "minutesP95": 26.4,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty2-interest300",
+    "data": "demo-1+gold150-bounty2-interest300",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.9,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.3,
+    "minutesP5": 13.1,
+    "minutesP95": 27.7,
+    "winRateCI95": [
+      0.5958436145024278,
+      0.9821242504842788
+    ],
+    "meanInterestShare": 0.012599686456995834,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty2-interest300",
+    "data": "demo-1+gold150-bounty2-interest300",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0,
+    "wavesP5": 0,
+    "wavesP50": 10,
+    "wavesP95": 29,
+    "minutesP50": 10.5,
+    "minutesP5": 0.9,
+    "minutesP95": 28.6,
+    "winRateCI95": [
+      0,
+      0.2775401687666166
+    ],
+    "meanInterestShare": 0.06532508773275147,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty2-interest300",
+    "data": "demo-1+gold150-bounty2-interest300",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.8,
+    "wavesP5": 14,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.3,
+    "minutesP5": 12.6,
+    "minutesP95": 26.4,
+    "winRateCI95": [
+      0.49015684672072335,
+      0.9433190520193067
+    ],
+    "meanInterestShare": 0.04367377356242383,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty2-interest600",
+    "data": "demo-1+gold150-bounty2-interest600",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 0.9,
+    "wavesP5": 29,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.7,
+    "minutesP5": 24.7,
+    "minutesP95": 27.7,
+    "winRateCI95": [
+      0.5958436145024278,
+      0.9821242504842788
+    ],
+    "meanInterestShare": 0.023430803908388743,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty2-interest600",
+    "data": "demo-1+gold150-bounty2-interest600",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.1,
+    "wavesP5": 0,
+    "wavesP50": 10,
+    "wavesP95": 30,
+    "minutesP50": 10.9,
+    "minutesP5": 0.9,
+    "minutesP95": 29.8,
+    "winRateCI95": [
+      0.01787574951572113,
+      0.4041563854975721
+    ],
+    "meanInterestShare": 0.08869693379819568,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty2-interest600",
+    "data": "demo-1+gold150-bounty2-interest600",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.9,
+    "wavesP5": 21,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 25.2,
+    "minutesP5": 19.1,
+    "minutesP95": 27.5,
+    "winRateCI95": [
+      0.5958436145024278,
+      0.9821242504842788
+    ],
+    "meanInterestShare": 0.08357027667457265,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty3-interest0",
+    "data": "demo-1+gold150-bounty3-interest0",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.5,
+    "minutesP5": 24.2,
+    "minutesP95": 26.7,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty3-interest0",
+    "data": "demo-1+gold150-bounty3-interest0",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.3,
+    "wavesP5": 0,
+    "wavesP50": 0,
+    "wavesP95": 30,
+    "minutesP50": 1,
+    "minutesP5": 0.9,
+    "minutesP95": 30.4,
+    "winRateCI95": [
+      0.10778928748621183,
+      0.6032267800204347
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty3-interest0",
+    "data": "demo-1+gold150-bounty3-interest0",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.6,
+    "minutesP5": 24.3,
+    "minutesP95": 25.8,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty3-interest300",
+    "data": "demo-1+gold150-bounty3-interest300",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.5,
+    "minutesP5": 24.2,
+    "minutesP95": 25.6,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.008603555144295958,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty3-interest300",
+    "data": "demo-1+gold150-bounty3-interest300",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.4,
+    "wavesP5": 0,
+    "wavesP50": 27,
+    "wavesP95": 30,
+    "minutesP50": 26.9,
+    "minutesP5": 0.9,
+    "minutesP95": 29.8,
+    "winRateCI95": [
+      0.16817758120350967,
+      0.6873304525498135
+    ],
+    "meanInterestShare": 0.06032660885518224,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty3-interest300",
+    "data": "demo-1+gold150-bounty3-interest300",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.5,
+    "minutesP5": 24.2,
+    "minutesP95": 26.9,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.030157264993487826,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty3-interest600",
+    "data": "demo-1+gold150-bounty3-interest600",
+    "policy": "greedy",
+    "runs": 10,
+    "winRate": 1,
+    "wavesP5": 30,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.5,
+    "minutesP5": 24.2,
+    "minutesP95": 25.8,
+    "winRateCI95": [
+      0.7224598312333834,
+      1
+    ],
+    "meanInterestShare": 0.017185655249951977,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty3-interest600",
+    "data": "demo-1+gold150-bounty3-interest600",
+    "policy": "random",
+    "runs": 10,
+    "winRate": 0.5,
+    "wavesP5": 0,
+    "wavesP50": 28,
+    "wavesP95": 30,
+    "minutesP50": 27.6,
+    "minutesP5": 0.9,
+    "minutesP95": 32.1,
+    "winRateCI95": [
+      0.23658959361548731,
+      0.7634104063845126
+    ],
+    "meanInterestShare": 0.0784831113142836,
+    "replayVerified": 10
+  },
+  {
+    "case": "gold150-bounty3-interest600",
+    "data": "demo-1+gold150-bounty3-interest600",
+    "policy": "greedy-reserve60",
+    "runs": 10,
+    "winRate": 0.9,
+    "wavesP5": 29,
+    "wavesP50": 30,
+    "wavesP95": 30,
+    "minutesP50": 24.7,
+    "minutesP5": 24.1,
+    "minutesP95": 26.7,
+    "winRateCI95": [
+      0.5958436145024278,
+      0.9821242504842788
+    ],
+    "meanInterestShare": 0.060348032619006765,
+    "replayVerified": 10
+  }
+]

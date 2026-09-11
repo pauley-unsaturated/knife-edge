@@ -18,5 +18,15 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm typecheck
       - run: pnpm test
-      - name: Smoke batch (determinism across machines is asserted by the golden test)
-        run: pnpm balance run --policy random,greedy --seeds 1..5
+      - run: pnpm build
+      - run: pnpm validate:balance
+      - name: Verify retained causal mechanic checkpoints
+        run: pnpm exec tsx experiments/0004-raid-heat/keepers/v4/verify.ts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: current-lab-smoke-reports-and-replays
+          path: experiments/0004-raid-heat/out/ci-lab-8/
+          retention-days: 7
+      - run: pnpm exec playwright install --with-deps chromium webkit
+      - run: pnpm test:browser

@@ -6,11 +6,23 @@
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { deriveData, runReplay, type RawGameData, type Replay } from "@knife-edge/sim";
+import {
+  deriveData,
+  runReplay,
+  validateReplay,
+  withDifficulty,
+  type Difficulty,
+  type RawGameData,
+  type Replay,
+} from "@knife-edge/sim";
 import { makePolicy } from "./policies/index.js";
 import { runPolicy, summarize, type RunSummary } from "./runner.js";
+import { comparePlayer } from "./compare.js";
 
-function parseArgs(argv: string[]): { cmd: string; opts: Record<string, string> } {
+function parseArgs(argv: string[]): {
+  cmd: string;
+  opts: Record<string, string>;
+} {
   const [cmd = "run", ...rest] = argv;
   const opts: Record<string, string> = {};
   for (let i = 0; i < rest.length; i++) {
@@ -32,9 +44,24 @@ function parseSeeds(spec: string): number[] {
   if (m) {
     const a = Number(m[1]);
     const b = Number(m[2]);
+    if (
+      !Number.isSafeInteger(a) ||
+      !Number.isSafeInteger(b) ||
+      a < 0 ||
+      b > 0xffffffff ||
+      b < a ||
+      b - a > 10000
+    )
+      throw new Error("invalid seed range (maximum 10001 seeds)");
     return Array.from({ length: b - a + 1 }, (_, i) => a + i);
   }
-  return spec.split(",").map(Number);
+  const seeds = spec.split(",").map(Number);
+  if (
+    !spec ||
+    seeds.some((n) => !Number.isInteger(n) || n < 0 || n > 0xffffffff)
+  )
+    throw new Error("invalid seeds");
+  return seeds;
 }
 
 /** Apply `--set a.b.c=value` overrides (numbers parsed; arrays addressed by index, e.g. towers.0.cost). */
@@ -43,12 +70,25 @@ function applyOverrides(raw: RawGameData, sets: string[]): RawGameData {
     const eq = spec.indexOf("=");
     if (eq < 0) throw new Error(`bad --set ${spec}`);
     const path = spec.slice(0, eq).split(".");
+    if (
+      path.some((key) =>
+        ["__proto__", "constructor", "prototype"].includes(key),
+      )
+    )
+      throw new Error("invalid override path");
     const valueStr = spec.slice(eq + 1);
-    const value = valueStr === "" || Number.isNaN(Number(valueStr)) ? valueStr : Number(valueStr);
-    let node: Record<string, unknown> = raw as unknown as Record<string, unknown>;
+    const value =
+      valueStr === "" || Number.isNaN(Number(valueStr))
+        ? valueStr
+        : Number(valueStr);
+    let node: Record<string, unknown> = raw as unknown as Record<
+      string,
+      unknown
+    >;
     for (let i = 0; i < path.length - 1; i++) {
       const next = node[path[i] as string];
-      if (typeof next !== "object" || next === null) throw new Error(`no such path ${spec}`);
+      if (typeof next !== "object" || next === null)
+        throw new Error(`no such path ${spec}`);
       node = next as Record<string, unknown>;
     }
     const leaf = path[path.length - 1] as string;
@@ -59,7 +99,12 @@ function applyOverrides(raw: RawGameData, sets: string[]): RawGameData {
 }
 
 function loadData(path: string, sets: string[] = []) {
-  const raw = applyOverrides(JSON.parse(readFileSync(path, "utf8")) as RawGameData, sets);
+  let raw = applyOverrides(
+    JSON.parse(readFileSync(path, "utf8")) as RawGameData,
+    sets,
+  );
+  if (opts["difficulty"])
+    raw = withDifficulty(raw, opts["difficulty"] as Difficulty);
   if (sets.length) raw.version = `${raw.version}+${sets.join(",")}`;
   return deriveData(raw);
 }
@@ -82,22 +127,51 @@ if (cmd === "run") {
       const r = runPolicy(data, policy, seed);
       results.push(r);
       if (out) {
-        writeFileSync(join(out, `${pname}-${seed}.replay.json`), JSON.stringify(r.replay));
+        writeFileSync(
+          join(out, `${pname}-${seed}.replay.json`),
+          JSON.stringify(r.replay),
+        );
         const { replay: _r, ...row } = r;
-        writeFileSync(join(out, `${pname}.jsonl`), JSON.stringify(row) + "\n", { flag: "a" });
+        writeFileSync(join(out, `${pname}.jsonl`), JSON.stringify(row) + "\n", {
+          flag: "a",
+        });
       }
     }
     const rep = summarize(results);
     console.log(JSON.stringify({ data: data.version, ...rep }));
-    if (opts["verbose"]) for (const r of results) console.log(`  seed ${r.seed}: ${r.outcome} waves=${r.wavesCleared} min=${r.minutesAt1x} gold=${r.gold} towers=${r.towers} interest=${r.interestEarned} early=${r.earlyBonusEarned}`);
+    if (opts["verbose"])
+      for (const r of results)
+        console.log(
+          `  seed ${r.seed}: ${r.outcome} waves=${r.wavesCleared} min=${r.minutesAt1x} gold=${r.gold} towers=${r.towers} interest=${r.interestEarned} early=${r.earlyBonusEarned}`,
+        );
   }
   console.error(`done in ${((Date.now() - started) / 1000).toFixed(1)}s`);
-} else if (cmd === "replay") {
-  const data = loadData(dataPath);
-  const replay = JSON.parse(readFileSync(opts["file"] as string, "utf8")) as Replay;
+} else if (cmd === "replay" || cmd === "compare") {
+  const replay = validateReplay(
+    JSON.parse(readFileSync(opts["file"] as string, "utf8")),
+  );
+  const data = replay.data ? deriveData(replay.data) : loadData(dataPath, sets);
+  if (cmd === "compare") {
+    console.log(JSON.stringify(comparePlayer(data, replay), null, 2));
+    process.exit(0);
+  }
   const r = runReplay(data, replay, Number(opts["maxTicks"] ?? 400_000));
-  console.log(JSON.stringify({ outcome: r.state.outcome, wave: r.state.wave, ticks: r.ticks, finalHash: r.finalHash, waveHashes: r.waveHashes }));
+  console.log(
+    JSON.stringify({
+      outcome: r.state.outcome,
+      wave: r.state.wave,
+      ticks: r.ticks,
+      finalHash: r.finalHash,
+      waveHashes: r.waveHashes,
+    }),
+  );
+  if (
+    replay.finalHash !== undefined &&
+    r.ticks === replay.endTick &&
+    replay.finalHash !== r.finalHash
+  )
+    throw new Error("replay hash mismatch");
 } else {
-  console.error("usage: balance run|replay ...");
+  console.error("usage: balance run|replay|compare ...");
   process.exit(2);
 }
